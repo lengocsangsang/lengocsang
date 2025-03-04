@@ -1,0 +1,65 @@
+/* Multiple colors for fireworks */
+.firework:nth-child(2) {
+  background-color: #ff4081; /* Pink */
+  box-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 15px #ff4081;
+}
+
+.firework:nth-child(3) {
+  background-color: #00bcd4; /* Light Blue */
+  box-shadow: 0 0 5px #00bcd4, 0 0 10px #00bcd4, 0 0 15px #00bcd4;
+}
+
+.firework:nth-child(4) {
+  background-color: #ffffff; /* White */
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
+.firework:nth-child(5) {
+  background-color: #8bc34a; /* Green */
+  box-shadow: 0 0 5px #8bc34a, 0 0 10px #8bc34a, 0 0 15px #8bc34a;
+}
+
+.firework:nth-child(6) {
+  background-color: #ff4081; /* Pink */
+  box-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 15px #ff4081;
+}
+
+.firework:nth-child(7) {
+  background-color: #8bc34a; /* Green */
+  box-shadow: 0 0 5px #8bc34a, 0 0 10px #8bc34a, 0 0 15px #8bc34a;
+}
+
+.firework:nth-child(8) {
+  background-color: #ffffff; /* White */
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
+.firework:nth-child(9) {
+  background-color: #ff4081; /* Pink */
+  box-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 15px #ff4081;
+}
+
+.firework:nth-child(10) {
+  background-color: #00bcd4; /* Light Blue */
+  box-shadow: 0 0 5px #00bcd4, 0 0 10px #00bcd4, 0 0 15px #00bcd4;
+}
+
+.firework:nth-child(11) {
+  background-color: #ffffff; /* White */
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
+.firework:nth-child(12) {
+  background-color: #8bc34a; /* Green */
+  box-shadow: 0 0 5px #8bc34a, 0 0 10px #8bc34a, 0 0 15px #8bc34a;
+}
+
+.firework:nth-child(13) {
+  background-color: #ff4081; /* Pink */
+  box-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 15px #ff4081;
+}
+
+.firework:nth-child(14) {
+  background-color: #8bc34a; /* Green */
+  box-shadow: 0 0 5px #8bc34a, 0 0 10px #8bc34a, 0 0 15px #8bc34a;
+}
