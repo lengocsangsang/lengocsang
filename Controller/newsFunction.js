@@ -56,7 +56,7 @@ export default async function newsFunction(query) {
 
     // 2. FETCH FOR NEWS
     const resForNews = await fetch(
-      `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${apiKeyForNews}`,
+      `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKeyForNews}`,
       {
         headers: {
           "User-Agent": "Mozilla/5.0", // Mimics a browser request

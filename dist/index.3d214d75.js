@@ -1350,7 +1350,7 @@ async function newsFunction(query) {
         // 1. DELETE ALL CONTENT INSIDE newsRenderEl
         newsRenderEl.innerHTML = "";
         // 2. FETCH FOR NEWS
-        const resForNews = await fetch(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${apiKeyForNews}`, {
+        const resForNews = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKeyForNews}`, {
             headers: {
                 "User-Agent": "Mozilla/5.0"
             }
