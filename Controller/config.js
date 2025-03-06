@@ -47,7 +47,7 @@ export default function weekDayCal() {
 // Birthdays for checkBirthday.js
 export const birthdays = {
   HaNhu: "2000-08-07",
-  MinhNhu: "2004-03-06",
+  MinhNhu: "2004-3-6",
   Dad: "1953-01-04",
   Sang: "1988-05-01",
   Ngan: "1982-10-10",
