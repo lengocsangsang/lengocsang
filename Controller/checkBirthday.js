@@ -1,4 +1,4 @@
-import { fireworkColors, birthdays } from "./config.js?v1";
+import { fireworkColors, birthdays } from "./config.js?v=1";
 
 export default function checkBirthday() {
   let today = new Date();
