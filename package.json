@@ -1,8 +1,12 @@
 {
-  "name": "mypage",
+  "name": "myhomepage",
   "version": "1.0.0",
-  "scripts": {},
-  "author": "",
+  "description": "THIS IS MY FIRST PROJECT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "LE NGOC SANG",
   "license": "ISC",
   "description": "",
   "devDependencies": {
