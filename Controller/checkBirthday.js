@@ -13,6 +13,7 @@ export default function checkBirthday() {
 
     //Add moving message
     if (todayMonth === birthdayMonth && todayDate === birthdayDate) {
+      console.log(birthday.getMonth(), birthday.getDate());
       document.querySelector(
         ".moving-message"
       ).textContent = `Happy Birthday to ${name}!!!`;
