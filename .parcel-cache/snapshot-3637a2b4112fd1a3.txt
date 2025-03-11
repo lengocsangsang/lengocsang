@@ -1,5 +1,5 @@
-1280
-14E:\mypage\dist133861884173131745 1
+1282
+14E:\mypage\dist133861890535486632 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -42,7 +42,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133861883952255201 0
+24E:\mypage\stylesheet.css133861890357929367 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -1272,7 +1272,9 @@
 37E:\mypage\dist\index.60928911.css.map133861862060556077 0
 37E:\mypage\dist\index.c0bea33f.css.map133861862945978437 0
 33E:\mypage\dist\index.e9c839d1.css133861870684440603 0
-25E:\mypage\dist\index.html133861884172913654 0
+33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
+37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
+25E:\mypage\dist\index.html133861890535084041 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133857075598133866 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0

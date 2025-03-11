@@ -523,7 +523,7 @@ middle: Aligns the middle of the element with the parent’s baseline plus half 
 text-top: Aligns the element’s top with the top of the parent’s text.
 text-bottom: Aligns the element’s bottom with the bottom of the parent’s text.
 Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align: -5px (shifts down) relative to the baseline. */
-@media (max-width: 390px) {
+@media (max-width: 430px) {
   /* Styles for iPhone 12, 13, 14, 15 */
   .general-container {
     background-color: #f8f9fa;
@@ -573,21 +573,39 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   .ethereum-container,
   .tether-container,
   .solana-container,
-  .bnb-container,
   .dogecoin-container {
-    /* Fixed typo: dodgecoin → dogecoin */
+    position: absolute;
+    top: 10px; /* Adjust spacing between containers */
     font-size: 12px;
     font-weight: 400;
-    width: 100%;
     text-align: center;
-    position: absolute; /* Keep absolute for vertical stacking */
-    transition: all 0.3s smooth;
-    animation: moveRight 25s linear infinite; /* 5s per container, no infinite loop */
+    white-space: nowrap; /* Prevent text from wrapping */
+    transition: all 0.3s ease-in-out;
   }
 
-  @keyframes moveRight {
+  .bitcoin-container {
+    animation: moveRight 25s linear infinite;
+  }
+  .ethereum-container {
+    animation: moveRight 27s linear infinite;
+  }
+
+  .tether-container {
+    animation: moveRight 29s linear infinite;
+  }
+
+  .solana-container {
+    animation: moveRight 31s linear infinite;
+  }
+
+  .dogecoin-container {
+    animation: moveRight 33s linear infinite;
+  }
+
+  /* Safari Fix */
+  @-webkit-keyframes moveRight {
     0% {
-      transform: translateX(0);
+      transform: translateX(-100%);
     }
     100% {
       transform: translateX(100vw);
