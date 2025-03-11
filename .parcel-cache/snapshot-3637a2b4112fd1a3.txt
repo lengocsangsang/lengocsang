@@ -1,5 +1,5 @@
-1288
-14E:\mypage\dist133861941393492614 1
+1290
+14E:\mypage\dist133861954242290940 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -42,7 +42,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133861941147541650 0
+24E:\mypage\stylesheet.css133861952413416684 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -948,6 +948,7 @@
 51E:\mypage\node_modules\csso\lib\restructure\prepare133855864671866247 1
 46E:\mypage\node_modules\@trysound\sax\README.md133855864640940984 0
 52E:\mypage\node_modules\csso\lib\restructure\utils.js133855864672158193 0
+37E:\mypage\dist\index.9934edec.css.map133861954242290940 0
 60E:\mypage\node_modules\csso\lib\restructure\prepare\index.js133855864671037124 0
 59E:\mypage\node_modules\css-tree\cjs\syntax\config\lexer.cjs133855864670219954 0
 64E:\mypage\node_modules\csso\cjs\replace\property\font-weight.cjs133855864651987640 0
@@ -1274,13 +1275,14 @@
 33E:\mypage\dist\index.56496b74.css133861918427926245 0
 37E:\mypage\dist\index.56496b74.css.map133861918428492501 0
 37E:\mypage\dist\index.60928911.css.map133861862060556077 0
+33E:\mypage\dist\index.9934edec.css133861954241948349 0
 37E:\mypage\dist\index.a9988c76.css.map133861937176064190 0
 37E:\mypage\dist\index.c0bea33f.css.map133861862945978437 0
 33E:\mypage\dist\index.e9c839d1.css133861870684440603 0
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133861941392911572 0
+25E:\mypage\dist\index.html133861954241948349 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133857075598133866 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0

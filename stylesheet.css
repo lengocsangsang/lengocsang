@@ -527,14 +527,14 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   /* Styles for iPhone 12, 13, 14, 15 */
   .general-container {
     background-color: #f8f9fa;
-    height: 100%;
+    height: 100vh;
     min-height: -webkit-fill-available; /* Safari Fix */
     width: 100%;
     margin: 0 auto;
     display: -webkit-grid; /* Fix for Safari */
     display: grid;
-    grid-template-columns: 2fr 8fr;
-    grid-template-rows: 8fr 2fr;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20%;
   }
 
   .panel-button-container {
@@ -681,6 +681,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     display: flex;
     align-items: center; /* Centers vertically */
     justify-content: space-around;
+    min-height: 20vh;
   }
 
   .coin-container {
