@@ -1,5 +1,5 @@
-1276
-14E:\mypage\dist133861862946154876 1
+1272
+14E:\mypage\dist133857108299738688 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -42,7 +42,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133861862057969646 0
+24E:\mypage\stylesheet.css133855384523252703 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -256,7 +256,7 @@
 39E:\mypage\node_modules\svgo\lib\svgo.js133855864656114492 0
 42E:\mypage\node_modules\svgo\lib\types.d.ts133855864658392685 0
 50E:\mypage\node_modules\css-tree\lib\lexer\match.js133855864680996597 0
-33E:\mypage\dist\index.60928911.css133861862060421238 0
+33E:\mypage\dist\index.60928911.css133855872791242808 0
 39E:\mypage\node_modules\svgo\lib\xast.js133855864659072816 0
 43E:\mypage\node_modules\svgo\lib\svgo\coa.js133855864656646697 0
 50E:\mypage\node_modules\dom-serializer\lib\index.js133855864642034538 0
@@ -423,7 +423,6 @@
 45E:\mypage\node_modules\mdn-data\l10n\index.js133855864642541132 0
 78E:\mypage\node_modules\csso\node_modules\css-tree\cjs\syntax\scope\default.cjs133855864658422393 0
 50E:\mypage\node_modules\domelementtype\package.json133855864644326565 0
-33E:\mypage\dist\index.c0bea33f.css133861862945471677 0
 49E:\mypage\node_modules\mdn-data\css\at-rules.json133855864644996507 0
 58E:\mypage\node_modules\mdn-data\css\properties.schema.json133855864655341086 0
 45E:\mypage\node_modules\mdn-data\css\readme.md133855864659265219 0
@@ -1262,13 +1261,10 @@
 32E:\mypage\node_modules\.bin\svgo133855864686038852 0
 27E:\mypage\html\hobbies.html133852382517550398 0
 32E:\mypage\html\professional.html133852382220409207 0
-32E:\mypage\dist\index.057eb596.js133861862060421238 0
-36E:\mypage\dist\index.057eb596.js.map133861862060576171 0
 32E:\mypage\dist\index.2e10f4c4.js133855864757154417 0
 32E:\mypage\dist\index.3d214d75.js133855872791103164 0
-37E:\mypage\dist\index.60928911.css.map133861862060556077 0
-37E:\mypage\dist\index.c0bea33f.css.map133861862945978437 0
-25E:\mypage\dist\index.html133861862945471677 0
+37E:\mypage\dist\index.60928911.css.map133855872791312609 0
+25E:\mypage\dist\index.html133857108297911421 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133857075598133866 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
