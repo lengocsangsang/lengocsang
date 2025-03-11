@@ -540,19 +540,23 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   .left-container {
     background-color: #f8f9fa;
     height: 80vh;
-    width: 20vw;
+    width: 0vw;
     margin: 0;
-    grid-column: 1 / 2;
+    grid-column: 1 / 1;
     grid-row: 1 / 2;
   }
 
   .center-container {
     background-color: #f8f9fa;
     height: 80vh;
-    width: 80vw;
+    width: 100vw;
     margin: 0;
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
+  }
+
+  .today-is {
+    display: none;
   }
 
   .right-container {
@@ -562,6 +566,17 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     margin: 0;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: space-around;
+  }
+
+  .coin-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adds space between coins */
+    position: relative;
+    width: 100vw; /* Ensure they move across the full screen */
   }
 
   .bitcoin-title {
@@ -575,40 +590,46 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   .solana-container,
   .dogecoin-container {
     position: absolute;
-    top: 10px; /* Adjust spacing between containers */
     font-size: 12px;
     font-weight: 400;
+    min-width: 120px; /* Ensure each item has enough space */
     text-align: center;
     white-space: nowrap; /* Prevent text from wrapping */
     transition: all 0.3s ease-in-out;
+    animation: moveRight 25s linear infinite;
   }
 
   .bitcoin-container {
-    animation: moveRight 25s linear infinite;
+    animation-delay: 0s;
+    /* left: -10px; */
   }
   .ethereum-container {
-    animation: moveRight 27s linear infinite;
+    animation-delay: 4s;
+    /* left: -20px; */
   }
 
   .tether-container {
-    animation: moveRight 29s linear infinite;
+    animation-delay: 8s;
+    /* left: -30px; */
   }
 
   .solana-container {
-    animation: moveRight 31s linear infinite;
+    animation-delay: 12s;
+    /* left: -40px; */
   }
 
   .dogecoin-container {
-    animation: moveRight 33s linear infinite;
+    animation-delay: 16s;
+    /* left: -50px; */
   }
 
   /* Safari Fix */
   @-webkit-keyframes moveRight {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-100vw);
     }
     100% {
-      transform: translateX(100vw);
+      transform: translateX(120vw);
     }
   }
 }
