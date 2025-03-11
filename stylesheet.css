@@ -528,8 +528,10 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   .general-container {
     background-color: #f8f9fa;
     height: 100vh;
+    min-height: -webkit-fill-available; /* Safari Fix */
     width: 100%;
     margin: 0 auto;
+    display: -webkit-grid; /* Fix for Safari */
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 8fr 2fr;
@@ -560,5 +562,35 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     margin: 0;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+  }
+
+  .bitcoin-title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  /* Common styles for all coin containers */
+  .bitcoin-container,
+  .ethereum-container,
+  .tether-container,
+  .solana-container,
+  .bnb-container,
+  .dogecoin-container {
+    /* Fixed typo: dodgecoin → dogecoin */
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    position: absolute; /* Keep absolute for vertical stacking */
+    transition: all 0.3s smooth;
+    animation: moveRight 25s linear infinite; /* 5s per container, no infinite loop */
+  }
+
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
   }
 }
