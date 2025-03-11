@@ -523,7 +523,7 @@ middle: Aligns the middle of the element with the parent’s baseline plus half 
 text-top: Aligns the element’s top with the top of the parent’s text.
 text-bottom: Aligns the element’s bottom with the bottom of the parent’s text.
 Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align: -5px (shifts down) relative to the baseline. */
-@media (max-width: 430px) {
+@media (max-width: 390px) {
   /* Styles for iPhone 12, 13, 14, 15 */
   .general-container {
     background-color: #f8f9fa;
