@@ -527,7 +527,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   /* Styles for iPhone 12, 13, 14, 15 */
   .general-container {
     background-color: #f8f9fa;
-    height: 100vh;
+    height: 100%;
     min-height: -webkit-fill-available; /* Safari Fix */
     width: 100%;
     margin: 0 auto;
@@ -539,7 +539,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
 
   .left-container {
     background-color: #f8f9fa;
-    height: 80vh;
+    height: 80%;
     width: 0vw;
     margin: 0;
     grid-column: 1 / 1;
@@ -548,20 +548,61 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
 
   .center-container {
     background-color: #f8f9fa;
-    height: 80vh;
+    height: 80%;
     width: 100vw;
     margin: 0;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
   }
 
+  /* CENTER CONTAINER ITEMS */
+  .taskInputBox {
+    width: 75%;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    padding: 12px 16px;
+
+    font-size: 16px;
+    line-height: 2;
+    font-style: italic;
+    color: #202124;
+
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+
+    text-align: center;
+  }
+
   .today-is {
     display: none;
   }
 
+  .clearTaskBtn {
+    position: absolute;
+    bottom: 22vh;
+    right: 12vw;
+    /* width: 50px; */
+    background-color: #dee2e6;
+    color: #ebfbee;
+
+    border-radius: 24px;
+    /* border-color: #2b8a3e; */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 12px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    z-index: 1000;
+  }
+
   .right-container {
     background-color: #f8f9fa;
-    height: 20vh;
+    height: 20%;
     width: 100vw;
     margin: 0;
     grid-column: 1 / 3;
@@ -574,9 +615,11 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   .coin-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px; /* Adds space between coins */
     position: relative;
     width: 100vw; /* Ensure they move across the full screen */
+    height: 100%;
   }
 
   .bitcoin-title {
@@ -593,10 +636,11 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   .tether-container,
   .solana-container,
   .dogecoin-container {
-    position: absolute;
+    display: inline-block;
     font-size: 12px;
     font-weight: 400;
     min-width: 120px; /* Ensure each item has enough space */
+    height: 100px;
     text-align: center;
     white-space: nowrap; /* Prevent text from wrapping */
     transition: all 0.3s ease-in-out;
