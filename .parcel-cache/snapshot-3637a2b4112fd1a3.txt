@@ -1,5 +1,5 @@
-1301
-14E:\mypage\dist133867136410516323 1
+1303
+14E:\mypage\dist133867142797673828 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -1283,6 +1283,8 @@
 33E:\mypage\dist\index.56496b74.css133861918427926245 0
 37E:\mypage\dist\index.56496b74.css.map133861918428492501 0
 37E:\mypage\dist\index.60928911.css.map133861862060556077 0
+32E:\mypage\dist\index.6216c918.js133867142797051076 0
+36E:\mypage\dist\index.6216c918.js.map133867142797635323 0
 33E:\mypage\dist\index.9934edec.css133861954241948349 0
 37E:\mypage\dist\index.a9988c76.css.map133861937176064190 0
 33E:\mypage\dist\index.b5227144.css133861959361570610 0
@@ -1293,10 +1295,10 @@
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133867136409341283 0
+25E:\mypage\dist\index.html133867142797051076 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
 37E:\mypage\Controller\familySection.js133854950256755952 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0
-36E:\mypage\Controller\newsFunction.js133867136168273682 0
+36E:\mypage\Controller\newsFunction.js133867142262155117 0

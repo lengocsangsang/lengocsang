@@ -1,4 +1,3 @@
-// const apiKeyForNews = "1a58498af44a4f23a5a58734f793215b"; //APINEWS
 const apiKeyForNews = "98b015ea23fe1c48e0824579120bc116"; //GNEWS
 const newsRenderEl = document.querySelector(".news-render");
 
@@ -56,13 +55,12 @@ export default async function newsFunction(query) {
     newsRenderEl.innerHTML = "";
 
     // 2. FETCH FOR NEWS
-
     const resForNews = await fetch(
       `https://gnews.io/api/v4/top-headlines?category=${query}&lang=ja&country=jp&apikey=${apiKeyForNews}`,
-      // `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKeyForNews}`,
       {
+        mode: "cors", // Explicitly request CORS mode
         headers: {
-          "User-Agent": "Mozilla/5.0", // Mimics a browser request
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", // Mimics a browser request
         },
       }
     );
