@@ -1,4 +1,5 @@
-const apiKeyForNews = "1a58498af44a4f23a5a58734f793215b";
+// const apiKeyForNews = "1a58498af44a4f23a5a58734f793215b"; //APINEWS
+const apiKeyForNews = "5a478c82-d950-4c79-a3b2-69e6d63ac614"; //GUARDIAN
 const newsRenderEl = document.querySelector(".news-render");
 
 function renderFunction(resultForNews) {
@@ -55,8 +56,10 @@ export default async function newsFunction(query) {
     newsRenderEl.innerHTML = "";
 
     // 2. FETCH FOR NEWS
+
     const resForNews = await fetch(
-      `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKeyForNews}`,
+      `https://content.guardianapis.com/search?section=${query}&show-fields=all&order-by=newest&page-size=5&api-key=${apiKeyForNews}`,
+      // `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKeyForNews}`,
       {
         headers: {
           "User-Agent": "Mozilla/5.0", // Mimics a browser request

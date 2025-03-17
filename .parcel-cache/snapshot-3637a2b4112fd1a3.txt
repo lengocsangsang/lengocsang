@@ -1,5 +1,5 @@
-1295
-14E:\mypage\dist133867088986601897 1
+1297
+14E:\mypage\dist133867105186494306 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -380,7 +380,7 @@
 47E:\mypage\node_modules\nth-check\lib\parse.d.ts133855864655359834 0
 51E:\mypage\node_modules\nth-check\lib\parse.d.ts.map133855864650538657 0
 44E:\mypage\node_modules\css-tree\package.json133855864685252066 0
-34E:\mypage\Controller\newsRender.js133854931412182591 0
+34E:\mypage\Controller\newsRender.js133867104157753589 0
 45E:\mypage\node_modules\nth-check\lib\parse.js133855864645349605 0
 61E:\mypage\node_modules\domutils\lib\esm\manipulation.d.ts.map133855864658462274 0
 50E:\mypage\node_modules\csso\cjs\replace\Atrule.cjs133855864646545311 0
@@ -1202,6 +1202,7 @@
 45E:\mypage\node_modules\css-select\lib\sort.js133855864651319243 0
 56E:\mypage\node_modules\css-tree\cjs\convertor\create.cjs133855864651867957 0
 55E:\mypage\node_modules\css-tree\cjs\convertor\index.cjs133855864668612660 0
+36E:\mypage\dist\index.daff4eca.js.map133867105186483814 0
 43E:\mypage\node_modules\css-select\README.md133855864669312943 0
 53E:\mypage\node_modules\css-select\lib\attributes.d.ts133855864669647927 0
 55E:\mypage\node_modules\css-select\lib\attributes.js.map133855864657638128 0
@@ -1283,14 +1284,15 @@
 37E:\mypage\dist\index.a9988c76.css.map133861937176064190 0
 33E:\mypage\dist\index.b5227144.css133861959361570610 0
 37E:\mypage\dist\index.c0bea33f.css.map133861862945978437 0
+32E:\mypage\dist\index.daff4eca.js133867105186341344 0
 33E:\mypage\dist\index.e9c839d1.css133861870684440603 0
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133867088986571995 0
+25E:\mypage\dist\index.html133867105186341344 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
-30E:\mypage\Controller\config.js133857075598133866 0
+30E:\mypage\Controller\config.js133867104067006217 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
 37E:\mypage\Controller\familySection.js133854950256755952 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0
-36E:\mypage\Controller\newsFunction.js133855872663285556 0
+36E:\mypage\Controller\newsFunction.js133867104989339679 0

@@ -1,11 +1,11 @@
 import newsFunction from "./newsFunction.js";
 
 import {
-  ai,
+  ai, //GUARD
   technology,
-  crypto,
+  cryptocurrency, //GUARD
   business,
-  sports,
+  sport, //GUARD
   travel,
   finance,
 } from "./config.js";

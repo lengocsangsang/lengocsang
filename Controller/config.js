@@ -46,12 +46,12 @@ export default function weekDayCal() {
 
 // Birthdays for checkBirthday.js
 export const birthdays = {
-  HaNhu: "2000-08-07",
-  MinhNhu: "2004-3-6",
+  HaNhu: "2000-07-08",
+  MinhNhu: "2004-03-06",
   Dad: "1953-01-04",
   Sang: "1988-05-01",
-  Ngan: "1982-10-10",
-  Huyen: "1980-06-10",
+  Ngan: "1982-10-06",
+  Huyen: "1980-10-10",
   Trong: "1980-03-16",
 };
 
@@ -133,9 +133,9 @@ export const fireworkColors = [
 
 export const ai = document.querySelector(".country-button-ai");
 export const technology = document.querySelector(".country-button-technology");
-export const crypto = document.querySelector(".country-button-crypto");
+export const cryptocurrency = document.querySelector(".country-button-crypto");
 export const business = document.querySelector(".country-button-business");
-export const sports = document.querySelector(".country-button-sports");
+export const sport = document.querySelector(".country-button-sports");
 export const travel = document.querySelector(".country-button-travel");
 export const finance = document.querySelector(".country-button-finance");
 
