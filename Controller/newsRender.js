@@ -48,8 +48,12 @@ export default async function newsRender() {
     newsFunction("health");
   });
 
-  backButton.addEventListener("click", function () {
-    const element = document.querySelector(".general-container");
-    element.scrollIntoView();
+  document.querySelectorAll(".back-to-homepage").forEach((button) => {
+    button.addEventListener("click", function () {
+      const element = document.getElementById("homepage");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   });
 }
