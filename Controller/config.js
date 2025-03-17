@@ -131,12 +131,14 @@ export const fireworkColors = [
   },
 ];
 
-export const ai = document.querySelector(".country-button-ai");
-export const technology = document.querySelector(".country-button-technology");
-export const cryptocurrency = document.querySelector(".country-button-crypto");
+export const general = document.querySelector(".country-button-general");
 export const business = document.querySelector(".country-button-business");
-export const sport = document.querySelector(".country-button-sports");
-export const travel = document.querySelector(".country-button-travel");
-export const finance = document.querySelector(".country-button-finance");
+export const technology = document.querySelector(".country-button-technology");
+export const entertainment = document.querySelector(
+  ".country-button-entertainment"
+);
+export const sports = document.querySelector(".country-button-sports");
+export const science = document.querySelector(".country-button-science");
+export const health = document.querySelector(".country-button-health");
 
 export const familyButton = document.getElementById("#panel-item-family");

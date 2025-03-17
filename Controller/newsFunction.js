@@ -1,9 +1,9 @@
 // const apiKeyForNews = "1a58498af44a4f23a5a58734f793215b"; //APINEWS
-const apiKeyForNews = "5a478c82-d950-4c79-a3b2-69e6d63ac614"; //GUARDIAN
+const apiKeyForNews = "98b015ea23fe1c48e0824579120bc116"; //GNEWS
 const newsRenderEl = document.querySelector(".news-render");
 
 function renderFunction(resultForNews) {
-  if (resultForNews.totalResults === 0) {
+  if (resultForNews.articles.length === 0) {
     const newsTitle = document.createElement("em");
     newsTitle.classList.add("news-content");
     newsTitle.textContent = "No top headlines for now...";
@@ -58,7 +58,7 @@ export default async function newsFunction(query) {
     // 2. FETCH FOR NEWS
 
     const resForNews = await fetch(
-      `https://content.guardianapis.com/search?section=${query}&show-fields=all&order-by=newest&page-size=5&api-key=${apiKeyForNews}`,
+      `https://gnews.io/api/v4/top-headlines?category=${query}&lang=ja&country=jp&apikey=${apiKeyForNews}`,
       // `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKeyForNews}`,
       {
         headers: {

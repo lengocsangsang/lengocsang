@@ -1,51 +1,51 @@
 import newsFunction from "./newsFunction.js";
 
 import {
-  ai, //GUARD
-  technology,
-  cryptocurrency, //GUARD
+  general, //GUARD
   business,
-  sport, //GUARD
-  travel,
-  finance,
+  technology, //GUARD
+  entertainment,
+  sports, //GUARD
+  science,
+  health,
 } from "./config.js";
 
 const backButton = document.querySelector(".back-to-homepage");
 
 export default async function newsRender() {
   // AI BUTTON CLICK
-  ai.addEventListener("click", async function () {
-    newsFunction("ai");
+  general.addEventListener("click", async function () {
+    newsFunction("general");
   });
 
   // CRYPTO BUTTON CLICK
-  cryptocurrency.addEventListener("click", async function () {
-    newsFunction("crypto");
-  });
-
-  // BUSINESS BUTTON CLICK
   business.addEventListener("click", async function () {
     newsFunction("business");
   });
 
+  // BUSINESS BUTTON CLICK
+  technology.addEventListener("click", async function () {
+    newsFunction("technology");
+  });
+
   // SPORTS BUTTON CLICK
-  sport.addEventListener("click", async function () {
-    newsFunction("sports");
+  entertainment.addEventListener("click", async function () {
+    newsFunction("entertainment");
   });
 
   // TRAVEL BUTTON CLICK
-  travel.addEventListener("click", async function () {
-    newsFunction("travel");
+  sports.addEventListener("click", async function () {
+    newsFunction("sports");
   });
 
   // FINANCE BUTTON CLICK
-  finance.addEventListener("click", async function () {
-    newsFunction("finance");
+  science.addEventListener("click", async function () {
+    newsFunction("science");
   });
 
-  // FINANCE BUTTON CLICK
-  technology.addEventListener("click", async function () {
-    newsFunction("technology");
+  // HEALTH BUTTON CLICK
+  health.addEventListener("click", async function () {
+    newsFunction("health");
   });
 
   backButton.addEventListener("click", function () {

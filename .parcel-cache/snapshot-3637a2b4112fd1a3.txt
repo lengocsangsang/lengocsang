@@ -1,5 +1,5 @@
-1299
-14E:\mypage\dist133867109008018399 1
+1301
+14E:\mypage\dist133867136410516323 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -33,7 +33,7 @@
 27E:\mypage\node_modules\svgo133855864659639898 1
 57E:\mypage\node_modules\domutils\lib\esm\manipulation.d.ts133855864668361748 0
 35E:\mypage\node_modules\css-what\lib133855864640930622 1
-20E:\mypage\index.html133867088777922413 0
+20E:\mypage\index.html133867128106432331 0
 53E:\mypage\node_modules\nth-check\lib\esm\compile.d.ts133855864652551463 0
 60E:\mypage\node_modules\dom-serializer\lib\esm\index.d.ts.map133855864646006634 0
 53E:\mypage\node_modules\css-tree\cjs\walker\create.cjs133855864656134498 0
@@ -322,6 +322,7 @@
 69E:\mypage\node_modules\csso\node_modules\css-tree\cjs\lexer\index.cjs133855864666978970 0
 60E:\mypage\node_modules\css-tree\cjs\syntax\scope\default.cjs133855864660769853 0
 54E:\mypage\node_modules\source-map-js\lib\quick-sort.js133855864645310842 0
+32E:\mypage\dist\index.239c75e8.js133867136409351262 0
 65E:\mypage\node_modules\source-map-js\lib\source-map-consumer.d.ts133855864650937101 0
 63E:\mypage\node_modules\source-map-js\lib\source-map-consumer.js133855864646226204 0
 67E:\mypage\node_modules\css-select\lib\esm\pseudo-selectors\index.js133855864648765176 0
@@ -381,7 +382,7 @@
 47E:\mypage\node_modules\nth-check\lib\parse.d.ts133855864655359834 0
 51E:\mypage\node_modules\nth-check\lib\parse.d.ts.map133855864650538657 0
 44E:\mypage\node_modules\css-tree\package.json133855864685252066 0
-34E:\mypage\Controller\newsRender.js133867108099003376 0
+34E:\mypage\Controller\newsRender.js133867134811584646 0
 45E:\mypage\node_modules\nth-check\lib\parse.js133855864645349605 0
 61E:\mypage\node_modules\domutils\lib\esm\manipulation.d.ts.map133855864658462274 0
 50E:\mypage\node_modules\csso\cjs\replace\Atrule.cjs133855864646545311 0
@@ -1276,6 +1277,7 @@
 32E:\mypage\dist\icon.f22edd40.svg133867087003434428 0
 32E:\mypage\dist\index.057eb596.js133861862060421238 0
 36E:\mypage\dist\index.057eb596.js.map133861862060576171 0
+36E:\mypage\dist\index.239c75e8.js.map133867136410488685 0
 32E:\mypage\dist\index.2e10f4c4.js133855864757154417 0
 32E:\mypage\dist\index.3d214d75.js133855872791103164 0
 33E:\mypage\dist\index.56496b74.css133861918427926245 0
@@ -1291,10 +1293,10 @@
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133867109007856157 0
+25E:\mypage\dist\index.html133867136409341283 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
-30E:\mypage\Controller\config.js133867104067006217 0
+30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
 37E:\mypage\Controller\familySection.js133854950256755952 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0
-36E:\mypage\Controller\newsFunction.js133867104989339679 0
+36E:\mypage\Controller\newsFunction.js133867136168273682 0
