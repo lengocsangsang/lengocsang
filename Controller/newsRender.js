@@ -19,7 +19,7 @@ export default async function newsRender() {
   });
 
   // CRYPTO BUTTON CLICK
-  crypto.addEventListener("click", async function () {
+  cryptocurrency.addEventListener("click", async function () {
     newsFunction("crypto");
   });
 
@@ -29,7 +29,7 @@ export default async function newsRender() {
   });
 
   // SPORTS BUTTON CLICK
-  sports.addEventListener("click", async function () {
+  sport.addEventListener("click", async function () {
     newsFunction("sports");
   });
 
