@@ -10,8 +10,6 @@ import {
   health,
 } from "./config.js";
 
-const backButton = document.querySelector(".back-to-homepage");
-
 export default async function newsRender() {
   // AI BUTTON CLICK
   general.addEventListener("click", async function () {
@@ -47,13 +45,13 @@ export default async function newsRender() {
   health.addEventListener("click", async function () {
     newsFunction("health");
   });
-
-  document.querySelectorAll(".back-to-homepage").forEach((button) => {
-    button.addEventListener("click", function () {
-      const element = document.getElementById("homepage");
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    });
-  });
 }
+
+document.querySelectorAll(".back-to-homepage").forEach((button) => {
+  button.addEventListener("click", function () {
+    const element = document.getElementById("homepage");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+});

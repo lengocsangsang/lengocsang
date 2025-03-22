@@ -53,8 +53,18 @@ export default async function newsFunction(query) {
   try {
     // 1. DELETE ALL CONTENT INSIDE newsRenderEl
     newsRenderEl.innerHTML = "";
+    // 2. DISPLAY LOADING...AT THE CENTER OF newsRenderEl
+    newsRenderEl.textContent = "Loading...";
+    // 3. CREATE SPINNER EL
+    const spinner = document.createElement("div");
+    spinner.classList.add("spinner");
+    spinner.id = "spinner";
+    // 4. ADD SPINNER AS CHILD EL TO newsRenderEl
+    newsRenderEl.appendChild(spinner);
+    // 5. DISPLAY SPINNER
+    spinner.style.display = "block";
 
-    // 2. FETCH FOR NEWS
+    // 6. FETCH FOR NEWS
     const resForNews = await fetch(
       `https://gnews.io/api/v4/top-headlines?category=${query}&lang=ja&country=jp&apikey=${apiKeyForNews}`,
       {
@@ -65,11 +75,17 @@ export default async function newsFunction(query) {
       }
     );
     const resultForNews = await resForNews.json();
-
-    // 3. RENDER NEWS
+    // 7. REMOVE LOADING...FROM newsRenderEl
+    newsRenderEl.textContent = "";
+    // 8. REMOVE SPINNER
+    spinner.style.display = "none";
+    // 9. RENDER resultForNews
     renderFunction(resultForNews);
   } catch (error) {
-    console.log("ERROR:", error.message);
+    // 7.2 REPLACE LOADING...WITH ERROR FETCHING NEWS
+    newsRenderEl.textContent = "ERROR FETCHING NEWS";
+    // 8.2 REMOVE SPINNER
+    spinner.style.display = "none";
   } finally {
     console.log("doing something here later");
   }
