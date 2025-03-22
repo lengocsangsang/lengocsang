@@ -84,6 +84,9 @@ export default async function newsFunction(query) {
   } catch (error) {
     // 7.2 REPLACE LOADING...WITH ERROR FETCHING NEWS
     newsRenderEl.textContent = "ERROR FETCHING NEWS";
+    setTimeout(() => {
+      newsRenderEl.textContent = "";
+    }, 10000);
     // 8.2 REMOVE SPINNER
     spinner.style.display = "none";
   } finally {
