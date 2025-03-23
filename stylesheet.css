@@ -814,3 +814,22 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     }
   }
 }
+
+.news-render {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 10px auto;
+  width: 80%;
+  height: 80vh;
+
+  background-color: #f1f3f5;
+  text-align: left;
+  border-radius: 5%;
+  padding-top: 10px;
+  align-items: center;
+  word-wrap: break-word; /* Allows long words to break */
+  overflow-wrap: break-word; /* Ensures text wraps within container */
+  white-space: normal; /* Allows text to wrap naturally */
+}
