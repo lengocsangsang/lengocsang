@@ -831,5 +831,14 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   align-items: left;
   word-wrap: break-word; /* Allows long words to break */
   overflow-wrap: break-word; /* Ensures text wraps within container */
-  white-space: normal; /* Allows text to wrap naturally */
+  white-space: normal; /* Allows text to wrap naturally*/
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+.news-content {
+  font-size: 10px;
+  line-height: 1.2;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
