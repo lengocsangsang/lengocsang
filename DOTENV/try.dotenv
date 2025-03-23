@@ -1,3 +1,82 @@
-I NEED TO TO BUILD A BUTTON TO DELETE EACH LI.
-WHEN I DELETE 1 LI, THE ORDER NUMBER BEFORE EACH LI MUST BE UPDATED
-I NEED TO BUILD A BUTTON TO MARK A LI AS COMPLETED OR PENDING
+In a browser environment, you cannot use dotenv like you do in Node.js because .env files 
+are not accessible in the frontend for security reasons.
+
+🌟 Alternative Solutions to Use Environment Variables in the Browser
+Since the browser doesn’t have access to the filesystem, here’s how you can manage environment variables 
+safely:
+
+✅ 1. Use a .env File with a Build Tool (Vite, Webpack, Parcel)
+If you're using a build tool like Vite, Webpack, or Parcel, you can load environment variables 
+into process.env at build time.
+
+Example for Vite or Parcel
+1️⃣ Create a .env file in your project root:
+
+ini
+Copy
+Edit
+VITE_API_KEY=your_api_key_here
+2️⃣ Access it in JavaScript:
+
+javascript
+Copy
+Edit
+const apiKey = import.meta.env.VITE_API_KEY;
+console.log(apiKey); // Will print your API key
+⚠️ Important: In Vite, all environment variables must start with VITE_ to be exposed to the client.
+
+✅ 2. Store API Keys in window (Unsafe but Quick)
+You can define your API key in the window object:
+
+html
+Copy
+Edit
+<script>
+  window.API_KEY = "your_api_key_here";
+</script>
+Then access it in JavaScript:
+
+javascript
+Copy
+Edit
+const apiKey = window.API_KEY;
+⚠️ Warning: Anyone can inspect this in the browser's DevTools.
+
+✅ 3. Use a .json Config File (Safer than .env in Frontend)
+1️⃣ Create a config.json file:
+
+json
+Copy
+Edit
+{
+  "apiKey": "your_api_key_here"
+}
+2️⃣ Load it dynamically in JavaScript:
+
+javascript
+Copy
+Edit
+fetch("config.json")
+  .then((response) => response.json())
+  .then((config) => {
+    const apiKey = config.apiKey;
+    console.log(apiKey);
+  });
+🔹 Pros: The file is separate, and you can exclude it from version control.
+🔹 Cons: Still exposed to the public in the frontend.
+
+🚀 Best Practice
+✅ If security is important, store secrets on the backend and expose only necessary data via an API.
+
+✅ If you're using Vite, Webpack, or Parcel, use environment variables with build-time injection.
+
+✅ If it's non-sensitive data, use a config file (config.json).
+
+Let me know if you need more help! 🚀😊
+
+
+
+
+
+
+

@@ -3,6 +3,8 @@ const newsRenderEl = document.querySelector(".news-render");
 
 function renderFunction(resultForNews) {
   if (resultForNews.articles.length === 0) {
+    // 1. ALIGN ITEMS TO LEFT INSIDE newsRenderEl
+    newsRenderEl.style.alignItems = "unset";
     const newsTitle = document.createElement("em");
     newsTitle.classList.add("news-content");
     newsTitle.textContent = "No top headlines for now...";
@@ -11,6 +13,8 @@ function renderFunction(resultForNews) {
 
   // CASE 2: MORE THAN 5 RESULTS FOUND
   if (resultForNews.articles.length > 5) {
+    // 1. ALIGN ITEMS TO LEFT INSIDE newsRenderEl
+    newsRenderEl.style.alignItems = "unset";
     for (let i = 0; i < 5; i++) {
       // Create news title element
       const newsTitle = document.createElement("li");
@@ -30,6 +34,8 @@ function renderFunction(resultForNews) {
 
     // CASE 3: MORE THAN 0 BUT LESS THAN 6 RESULTS FOUND
   } else {
+    // 1. ALIGN ITEMS TO LEFT INSIDE newsRenderEl
+    newsRenderEl.style.alignItems = "unset";
     for (let i = 0; i < resultForNews.articles.length; i++) {
       // Create news title element
       const newsTitle = document.createElement("li");
@@ -51,8 +57,10 @@ function renderFunction(resultForNews) {
 
 export default async function newsFunction(query) {
   try {
-    // 1. DELETE ALL CONTENT INSIDE newsRenderEl
+    // 0. DELETE ALL CONTENT INSIDE newsRenderEl
     newsRenderEl.innerHTML = "";
+    // 1. ALIGN ITEMS TO CENTER INSIDE newsRenderEl
+    newsRenderEl.style.alignItems = "center";
     // 2. DISPLAY LOADING...AT THE CENTER OF newsRenderEl
     newsRenderEl.textContent = "Loading...";
     // 3. CREATE SPINNER EL
@@ -80,13 +88,15 @@ export default async function newsFunction(query) {
     // 8. REMOVE SPINNER
     spinner.style.display = "none";
     // 9. RENDER resultForNews
+
     renderFunction(resultForNews);
   } catch (error) {
-    // 7.2 REPLACE LOADING...WITH ERROR FETCHING NEWS
+    // 7.2 REPLACE "LOADING..." WITH "ERROR FETCHING NEWS"
     newsRenderEl.textContent = "ERROR FETCHING NEWS";
+    // 7.3 REMOVE "ERROR FETCHING NEWS" AFTER 5000ms
     setTimeout(() => {
       newsRenderEl.textContent = "";
-    }, 10000);
+    }, 5000);
     // 8.2 REMOVE SPINNER
     spinner.style.display = "none";
   } finally {
