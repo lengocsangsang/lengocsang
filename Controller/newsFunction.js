@@ -93,11 +93,11 @@ export default async function newsFunction(query) {
   } catch (error) {
     console.log(error);
     // 7.2 REPLACE "LOADING..." WITH "ERROR FETCHING NEWS"
-    newsRenderEl.textContent = `ERROR FETCHING NEWS: ${error.message}. Please try later.`;
+    newsRenderEl.textContent = `ERROR FETCHING NEWS: ${error.message} ${resultForNews.status} ${error}. Please try later.`;
     // 7.3 REMOVE "ERROR FETCHING NEWS" AFTER 5000ms
     setTimeout(() => {
       newsRenderEl.textContent = "";
-    }, 5000);
+    }, 15000);
     // 8.2 REMOVE SPINNER
     spinner.style.display = "none";
   } finally {
