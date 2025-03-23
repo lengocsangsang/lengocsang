@@ -360,7 +360,7 @@ h6 {
 /* topics for news */
 #country-button {
   margin: 2px;
-  font-size: 15px;
+  font-size: 16px;
   padding: 4px 8px;
   border: none;
   outline: none;
@@ -382,6 +382,7 @@ h6 {
 .news-render {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 
   margin: 40px auto;
@@ -392,24 +393,20 @@ h6 {
   text-align: left;
   border-radius: 5%;
   padding-top: 20px;
-  align-items: center;
-  font-size: 24px;
 }
 
 /* li element */
 .news-content {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   padding-left: 30px;
-  box-sizing: border-box;
 }
 
 /* a element */
 .newsUrl {
-  font-size: 10px;
+  font-size: 16px;
   padding-left: 56px;
   padding-bottom: 12px;
-  box-sizing: border-box;
 }
 
 .spinner {
@@ -811,6 +808,44 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     /* left: -50px; */
   }
 
+  /* NEWS RENDER FOR SMARTPHONE */
+  .news-render {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+
+    padding-left: 10px;
+    padding-bottom: 0;
+
+    margin: 10px auto;
+    width: 80%;
+    height: 70vh;
+
+    background-color: #f1f3f5;
+    text-align: left;
+    border-radius: 5%;
+    padding-top: 20px;
+    word-wrap: break-word; /* Allows long words to break */
+    overflow-wrap: break-word; /* Ensures text wraps within container */
+    white-space: normal; /* Allows text to wrap naturally*/
+    font-size: 10px;
+  }
+
+  .news-content {
+    font-size: 10px;
+    line-height: 1.2;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+  .newsUrl {
+    font-size: 8px;
+    line-height: 1.2;
+    padding-left: 12px;
+    box-sizing: border-box;
+  }
+
   /* Safari Fix */
   @-webkit-keyframes moveRight {
     0% {
@@ -820,42 +855,4 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
       transform: translateX(120vw);
     }
   }
-}
-
-/* NEWS RENDER FOR SMARTPHONE */
-.news-render {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  gap: 10px;
-
-  padding-left: 10px;
-  padding-bottom: 0;
-
-  margin: 10px auto;
-  width: 80%;
-  height: 70vh;
-
-  background-color: #f1f3f5;
-  text-align: left;
-  border-radius: 5%;
-  padding-top: 20px;
-  word-wrap: break-word; /* Allows long words to break */
-  overflow-wrap: break-word; /* Ensures text wraps within container */
-  white-space: normal; /* Allows text to wrap naturally*/
-  font-size: 10px;
-}
-
-.news-content {
-  font-size: 10px;
-  line-height: 1.2;
-  padding-left: 10px;
-  box-sizing: border-box;
-}
-
-.newsUrl {
-  font-size: 8px;
-  line-height: 1.2;
-  padding-left: 12px;
-  box-sizing: border-box;
 }
