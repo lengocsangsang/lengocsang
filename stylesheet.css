@@ -819,8 +819,8 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     padding-bottom: 0;
 
     margin: 10px auto;
-    width: 80%;
-    height: 70vh;
+    width: 100%;
+    height: 60vh;
 
     background-color: #f1f3f5;
     text-align: left;
@@ -829,18 +829,17 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     word-wrap: break-word; /* Allows long words to break */
     overflow-wrap: break-word; /* Ensures text wraps within container */
     white-space: normal; /* Allows text to wrap naturally*/
-    font-size: 10px;
   }
 
   .news-content {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.2;
     padding-left: 10px;
     box-sizing: border-box;
   }
 
   .newsUrl {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 1.2;
     padding-left: 12px;
     box-sizing: border-box;
