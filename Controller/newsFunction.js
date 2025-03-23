@@ -93,7 +93,7 @@ export default async function newsFunction(query) {
   } catch (error) {
     console.log(error);
     // 7.2 REPLACE "LOADING..." WITH "ERROR FETCHING NEWS"
-    newsRenderEl.textContent = `ERROR FETCHING NEWS: ${JSON.stringify(error)}`;
+    newsRenderEl.textContent = `ERROR FETCHING NEWS: ${error.message}`;
     // 7.3 REMOVE "ERROR FETCHING NEWS" AFTER 5000ms
     setTimeout(() => {
       newsRenderEl.textContent = "";
