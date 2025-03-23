@@ -656,13 +656,13 @@ parcelHelpers.export(exports, "months", ()=>months);
 parcelHelpers.export(exports, "default", ()=>weekDayCal);
 parcelHelpers.export(exports, "birthdays", ()=>birthdays);
 parcelHelpers.export(exports, "fireworkColors", ()=>fireworkColors);
-parcelHelpers.export(exports, "ai", ()=>ai);
-parcelHelpers.export(exports, "technology", ()=>technology);
-parcelHelpers.export(exports, "crypto", ()=>crypto);
+parcelHelpers.export(exports, "general", ()=>general);
 parcelHelpers.export(exports, "business", ()=>business);
+parcelHelpers.export(exports, "technology", ()=>technology);
+parcelHelpers.export(exports, "entertainment", ()=>entertainment);
 parcelHelpers.export(exports, "sports", ()=>sports);
-parcelHelpers.export(exports, "travel", ()=>travel);
-parcelHelpers.export(exports, "finance", ()=>finance);
+parcelHelpers.export(exports, "science", ()=>science);
+parcelHelpers.export(exports, "health", ()=>health);
 parcelHelpers.export(exports, "familyButton", ()=>familyButton);
 const months = [
     "Jan",
@@ -706,12 +706,12 @@ function weekDayCal() {
     return weekDay;
 }
 const birthdays = {
-    HaNhu: "2000-08-07",
-    MinhNhu: "2004-3-6",
+    HaNhu: "2000-07-08",
+    MinhNhu: "2004-03-06",
     Dad: "1953-01-04",
     Sang: "1988-05-01",
-    Ngan: "1982-10-10",
-    Huyen: "1980-06-10",
+    Ngan: "1982-10-06",
+    Huyen: "1980-10-10",
     Trong: "1980-03-16"
 };
 const fireworkColors = [
@@ -788,13 +788,13 @@ const fireworkColors = [
         shadow: "0 0 5px #ffb300, 0 0 10px #ffb300, 0 0 15px #ffb300"
     }
 ];
-const ai = document.querySelector(".country-button-ai");
-const technology = document.querySelector(".country-button-technology");
-const crypto = document.querySelector(".country-button-crypto");
+const general = document.querySelector(".country-button-general");
 const business = document.querySelector(".country-button-business");
+const technology = document.querySelector(".country-button-technology");
+const entertainment = document.querySelector(".country-button-entertainment");
 const sports = document.querySelector(".country-button-sports");
-const travel = document.querySelector(".country-button-travel");
-const finance = document.querySelector(".country-button-finance");
+const science = document.querySelector(".country-button-science");
+const health = document.querySelector(".country-button-health");
 const familyButton = document.getElementById("#panel-item-family");
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"a75BS"}],"a75BS":[function(require,module,exports,__globalThis) {
@@ -886,13 +886,13 @@ parcelHelpers.export(exports, "months", ()=>months);
 parcelHelpers.export(exports, "default", ()=>weekDayCal);
 parcelHelpers.export(exports, "birthdays", ()=>birthdays);
 parcelHelpers.export(exports, "fireworkColors", ()=>fireworkColors);
-parcelHelpers.export(exports, "ai", ()=>ai);
-parcelHelpers.export(exports, "technology", ()=>technology);
-parcelHelpers.export(exports, "crypto", ()=>crypto);
+parcelHelpers.export(exports, "general", ()=>general);
 parcelHelpers.export(exports, "business", ()=>business);
+parcelHelpers.export(exports, "technology", ()=>technology);
+parcelHelpers.export(exports, "entertainment", ()=>entertainment);
 parcelHelpers.export(exports, "sports", ()=>sports);
-parcelHelpers.export(exports, "travel", ()=>travel);
-parcelHelpers.export(exports, "finance", ()=>finance);
+parcelHelpers.export(exports, "science", ()=>science);
+parcelHelpers.export(exports, "health", ()=>health);
 parcelHelpers.export(exports, "familyButton", ()=>familyButton);
 const months = [
     "Jan",
@@ -936,12 +936,12 @@ function weekDayCal() {
     return weekDay;
 }
 const birthdays = {
-    HaNhu: "2000-08-07",
-    MinhNhu: "2004-3-6",
+    HaNhu: "2000-07-08",
+    MinhNhu: "2004-03-06",
     Dad: "1953-01-04",
     Sang: "1988-05-01",
-    Ngan: "1982-10-10",
-    Huyen: "1980-06-10",
+    Ngan: "1982-10-06",
+    Huyen: "1980-10-10",
     Trong: "1980-03-16"
 };
 const fireworkColors = [
@@ -1018,13 +1018,13 @@ const fireworkColors = [
         shadow: "0 0 5px #ffb300, 0 0 10px #ffb300, 0 0 15px #ffb300"
     }
 ];
-const ai = document.querySelector(".country-button-ai");
-const technology = document.querySelector(".country-button-technology");
-const crypto = document.querySelector(".country-button-crypto");
+const general = document.querySelector(".country-button-general");
 const business = document.querySelector(".country-button-business");
+const technology = document.querySelector(".country-button-technology");
+const entertainment = document.querySelector(".country-button-entertainment");
 const sports = document.querySelector(".country-button-sports");
-const travel = document.querySelector(".country-button-travel");
-const finance = document.querySelector(".country-button-finance");
+const science = document.querySelector(".country-button-science");
+const health = document.querySelector(".country-button-health");
 const familyButton = document.getElementById("#panel-item-family");
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"a75BS"}],"fCZmY":[function(require,module,exports,__globalThis) {
@@ -1416,100 +1416,136 @@ parcelHelpers.export(exports, "default", ()=>newsRender);
 var _newsFunctionJs = require("./newsFunction.js");
 var _newsFunctionJsDefault = parcelHelpers.interopDefault(_newsFunctionJs);
 var _configJs = require("./config.js");
-const backButton = document.querySelector(".back-to-homepage");
 async function newsRender() {
     // AI BUTTON CLICK
-    (0, _configJs.ai).addEventListener("click", async function() {
-        (0, _newsFunctionJsDefault.default)("ai");
+    (0, _configJs.general).addEventListener("click", async function() {
+        (0, _newsFunctionJsDefault.default)("general");
     });
     // CRYPTO BUTTON CLICK
-    (0, _configJs.crypto).addEventListener("click", async function() {
-        (0, _newsFunctionJsDefault.default)("crypto");
-    });
-    // BUSINESS BUTTON CLICK
     (0, _configJs.business).addEventListener("click", async function() {
         (0, _newsFunctionJsDefault.default)("business");
     });
-    // SPORTS BUTTON CLICK
-    (0, _configJs.sports).addEventListener("click", async function() {
-        (0, _newsFunctionJsDefault.default)("sports");
-    });
-    // TRAVEL BUTTON CLICK
-    (0, _configJs.travel).addEventListener("click", async function() {
-        (0, _newsFunctionJsDefault.default)("travel");
-    });
-    // FINANCE BUTTON CLICK
-    (0, _configJs.finance).addEventListener("click", async function() {
-        (0, _newsFunctionJsDefault.default)("finance");
-    });
-    // FINANCE BUTTON CLICK
+    // BUSINESS BUTTON CLICK
     (0, _configJs.technology).addEventListener("click", async function() {
         (0, _newsFunctionJsDefault.default)("technology");
     });
-    backButton.addEventListener("click", function() {
-        const element = document.querySelector(".general-container");
-        element.scrollIntoView();
+    // SPORTS BUTTON CLICK
+    (0, _configJs.entertainment).addEventListener("click", async function() {
+        (0, _newsFunctionJsDefault.default)("entertainment");
+    });
+    // TRAVEL BUTTON CLICK
+    (0, _configJs.sports).addEventListener("click", async function() {
+        (0, _newsFunctionJsDefault.default)("sports");
+    });
+    // FINANCE BUTTON CLICK
+    (0, _configJs.science).addEventListener("click", async function() {
+        (0, _newsFunctionJsDefault.default)("science");
+    });
+    // HEALTH BUTTON CLICK
+    (0, _configJs.health).addEventListener("click", async function() {
+        (0, _newsFunctionJsDefault.default)("health");
     });
 }
+document.querySelectorAll(".back-to-homepage").forEach((button)=>{
+    button.addEventListener("click", function() {
+        const element = document.getElementById("homepage");
+        if (element) element.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+});
 
 },{"./newsFunction.js":"6HlH5","./config.js":"dMFhV","@parcel/transformer-js/src/esmodule-helpers.js":"a75BS"}],"6HlH5":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>newsFunction);
-const apiKeyForNews = "1a58498af44a4f23a5a58734f793215b";
+const apiKeyForNews = "98b015ea23fe1c48e0824579120bc116"; //GNEWS
 const newsRenderEl = document.querySelector(".news-render");
-function renderFunction(resultForNews) {
-    if (resultForNews.totalResults === 0) {
+function renderFunction(resultForNews1) {
+    if (resultForNews1.articles.length === 0) {
+        // 1. ALIGN ITEMS TO LEFT INSIDE newsRenderEl
+        newsRenderEl.style.alignItems = "unset";
         const newsTitle = document.createElement("em");
         newsTitle.classList.add("news-content");
         newsTitle.textContent = "No top headlines for now...";
         newsRenderEl.appendChild(newsTitle);
     }
     // CASE 2: MORE THAN 5 RESULTS FOUND
-    if (resultForNews.articles.length > 5) for(let i = 0; i < 5; i++){
-        // Create news title element
-        const newsTitle = document.createElement("li");
-        newsTitle.classList.add("news-content");
-        newsTitle.textContent = resultForNews.articles[i].title;
-        // Create news URL element
-        const newsUrl = document.createElement("a");
-        newsUrl.href = resultForNews.articles[i].url;
-        newsUrl.textContent = resultForNews.articles[i].url;
-        newsUrl.target = "_blank";
-        // Append the news title and URL to the container
-        newsRenderEl.appendChild(newsTitle);
-        newsRenderEl.appendChild(newsUrl);
-    }
-    else for(let i = 0; i < resultForNews.articles.length; i++){
-        // Create news title element
-        const newsTitle = document.createElement("li");
-        newsTitle.classList.add("news-content");
-        newsTitle.textContent = resultForNews.articles[i].title;
-        // Create news URL element
-        const newsUrl = document.createElement("a");
-        newsUrl.href = resultForNews.articles[i].url;
-        newsUrl.textContent = resultForNews.articles[i].url;
-        newsUrl.target = "_blank";
-        // Append the news title and URL to the container
-        newsRenderEl.appendChild(newsTitle);
-        newsRenderEl.appendChild(newsUrl);
+    if (resultForNews1.articles.length > 5) {
+        // 1. ALIGN ITEMS TO LEFT INSIDE newsRenderEl
+        newsRenderEl.style.alignItems = "unset";
+        for(let i = 0; i < 5; i++){
+            // Create news title element
+            const newsTitle = document.createElement("li");
+            newsTitle.classList.add("news-content");
+            newsTitle.textContent = resultForNews1.articles[i].title;
+            // Create news URL element
+            const newsUrl = document.createElement("a");
+            newsUrl.href = resultForNews1.articles[i].url;
+            newsUrl.classList.add("newsUrl");
+            newsUrl.textContent = resultForNews1.articles[i].url;
+            newsUrl.target = "_blank";
+            // Append the news title and URL to the container
+            newsRenderEl.appendChild(newsTitle);
+            newsRenderEl.appendChild(newsUrl);
+        }
+    // CASE 3: MORE THAN 0 BUT LESS THAN 6 RESULTS FOUND
+    } else {
+        // 1. ALIGN ITEMS TO LEFT INSIDE newsRenderEl
+        newsRenderEl.style.alignItems = "unset";
+        for(let i = 0; i < resultForNews1.articles.length; i++){
+            // Create news title element
+            const newsTitle = document.createElement("li");
+            newsTitle.classList.add("news-content");
+            newsTitle.textContent = resultForNews1.articles[i].title;
+            // Create news URL element
+            const newsUrl = document.createElement("a");
+            newsUrl.classList.add("newsUrl");
+            newsUrl.href = resultForNews1.articles[i].url;
+            newsUrl.textContent = resultForNews1.articles[i].url;
+            newsUrl.target = "_blank";
+            // Append the news title and URL to the container
+            newsRenderEl.appendChild(newsTitle);
+            newsRenderEl.appendChild(newsUrl);
+        }
     }
 }
 async function newsFunction(query) {
     try {
-        // 1. DELETE ALL CONTENT INSIDE newsRenderEl
+        // 0. DELETE ALL CONTENT INSIDE newsRenderEl
         newsRenderEl.innerHTML = "";
-        // 2. FETCH FOR NEWS
-        const resForNews = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKeyForNews}`, {
-            headers: {
-                "User-Agent": "Mozilla/5.0"
-            }
-        });
-        const resultForNews = await resForNews.json();
-        // 3. RENDER NEWS
-        renderFunction(resultForNews);
+        // 1. ALIGN ITEMS TO CENTER INSIDE newsRenderEl
+        newsRenderEl.style.alignItems = "center";
+        // 2. DISPLAY LOADING...AT THE CENTER OF newsRenderEl
+        newsRenderEl.textContent = "Loading...";
+        // 3. CREATE SPINNER EL
+        const spinner1 = document.createElement("div");
+        spinner1.classList.add("spinner");
+        spinner1.id = "spinner";
+        // 4. ADD SPINNER AS CHILD EL TO newsRenderEl
+        newsRenderEl.appendChild(spinner1);
+        // 5. DISPLAY SPINNER
+        spinner1.style.display = "block";
+        // 6. FETCH FOR NEWS
+        const resForNews = await fetch(`https://gnews.io/api/v4/top-headlines?category=${query}&lang=ja&country=jp&apikey=${apiKeyForNews}`);
+        const resultForNews1 = await resForNews.json();
+        // 7. REMOVE LOADING...FROM newsRenderEl
+        newsRenderEl.textContent = "";
+        // 8. REMOVE SPINNER
+        spinner1.style.display = "none";
+        // 9. RENDER resultForNews
+        renderFunction(resultForNews1);
     } catch (error) {
-        console.log("ERROR:", error.message);
+        console.log(error);
+        // 7.2 REPLACE "LOADING..." WITH "ERROR FETCHING NEWS"
+        newsRenderEl.textContent = `ERROR FETCHING NEWS: ${error.message} ${resultForNews.status} ${error}. Please try later.`;
+        // 7.3 REMOVE "ERROR FETCHING NEWS" AFTER 5000ms
+        setTimeout(()=>{
+            newsRenderEl.textContent = "";
+        }, 15000);
+        // 8.2 REMOVE SPINNER
+        spinner.style.display = "none";
     } finally{
         console.log("doing something here later");
     }

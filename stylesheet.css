@@ -397,14 +397,14 @@ h6 {
 
 /* li element */
 .news-content {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   padding-left: 30px;
 }
 
 /* a element */
 .newsUrl {
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 56px;
   padding-bottom: 12px;
 }
@@ -818,7 +818,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     padding-left: 10px;
     padding-bottom: 0;
 
-    margin: 10px auto;
+    margin: 20px auto;
     width: 100%;
     height: 60vh;
 
@@ -835,6 +835,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     font-size: 12px;
     line-height: 1.2;
     padding-left: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
   }
 
