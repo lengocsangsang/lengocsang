@@ -1,5 +1,5 @@
-1311
-14E:\mypage\dist133871446129941379 1
+1314
+14E:\mypage\dist133871754591510784 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -12,7 +12,7 @@
 64E:\mypage\node_modules\svgo\plugins\addAttributesToSVGElement.js133855864661604539 0
 14E:\mypage\html133855861826538300 1
 13E:\mypage\css133855861826311205 1
-18E:\mypage\index.js133853957325667948 0
+18E:\mypage\index.js133871451739314108 0
 73E:\mypage\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Nth.cjs133855864670175584 0
 33E:\mypage\dist\index.ee8bdd7e.css133871439645719033 0
 51E:\mypage\node_modules\nth-check\lib\esm\parse.d.ts133855864654740865 0
@@ -27,7 +27,7 @@
 44E:\mypage\node_modules\mdn-data\css\index.js133855864640940984 0
 65E:\mypage\node_modules\csso\node_modules\css-tree\cjs\version.cjs133855864673801233 0
 49E:\mypage\node_modules\svgo\plugins\mergePaths.js133855864667304927 0
-16E:\mypage\DOTENV133855861826311205 1
+16E:\mypage\DOTENV133871451245160955 1
 51E:\mypage\node_modules\svgo\plugins\inlineStyles.js133855864666900094 0
 63E:\mypage\node_modules\css-tree\cjs\lexer\generic-an-plus-b.cjs133855864665458583 0
 27E:\mypage\node_modules\.bin133855864686038852 1
@@ -412,7 +412,7 @@
 48E:\mypage\node_modules\domutils\lib\traversal.js133855864650618453 0
 44E:\mypage\node_modules\mdn-data\CHANGELOG.md133855864659102733 0
 70E:\mypage\node_modules\csso\node_modules\css-tree\cjs\syntax\index.cjs133855864668341697 0
-27E:\mypage\DOTENV\try.dotenv133852384331034855 0
+27E:\mypage\DOTENV\try.dotenv133871453896705659 0
 65E:\mypage\node_modules\entities\lib\generated\decode-data-html.js133855864644386403 0
 56E:\mypage\node_modules\dom-serializer\lib\index.d.ts.map133855864646196263 0
 40E:\mypage\node_modules\mdn-data\index.js133855864640940984 0
@@ -1221,7 +1221,9 @@
 52E:\mypage\node_modules\css-select\lib\index.d.ts.map133855864664718678 0
 46E:\mypage\node_modules\css-select\lib\index.js133855864649717976 0
 50E:\mypage\node_modules\css-select\lib\index.js.map133855864665458583 0
+32E:\mypage\dist\index.1604dd9e.js133871754591185157 0
 47E:\mypage\node_modules\css-select\lib\sort.d.ts133855864671047173 0
+36E:\mypage\dist\index.1604dd9e.js.map133871754591488408 0
 51E:\mypage\node_modules\css-select\lib\sort.d.ts.map133855864668361748 0
 49E:\mypage\node_modules\css-select\lib\sort.js.map133855864668508601 0
 48E:\mypage\node_modules\css-select\lib\types.d.ts133855864671584568 0
@@ -1278,6 +1280,7 @@
 32E:\mypage\node_modules\.bin\svgo133855864686038852 0
 27E:\mypage\html\hobbies.html133852382517550398 0
 32E:\mypage\html\professional.html133852382220409207 0
+30E:\mypage\DOTENV\config.dotenv133871451548113635 0
 32E:\mypage\dist\icon.f22edd40.svg133867087003434428 0
 32E:\mypage\dist\index.057eb596.js133861862060421238 0
 36E:\mypage\dist\index.057eb596.js.map133861862060576171 0
@@ -1303,10 +1306,10 @@
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133871446129281828 0
+25E:\mypage\dist\index.html133871754591483109 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
 37E:\mypage\Controller\familySection.js133854950256755952 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0
-36E:\mypage\Controller\newsFunction.js133871445769125636 0
+36E:\mypage\Controller\newsFunction.js133871753859715628 0
