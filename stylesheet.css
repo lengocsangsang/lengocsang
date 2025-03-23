@@ -822,13 +822,13 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
 
   margin: 10px auto;
   width: 80%;
-  height: 80vh;
+  height: 70vh;
 
   background-color: #f1f3f5;
   text-align: left;
   border-radius: 5%;
-  padding-top: 10px;
-  align-items: center;
+  padding-top: 5px;
+  align-items: left;
   word-wrap: break-word; /* Allows long words to break */
   overflow-wrap: break-word; /* Ensures text wraps within container */
   white-space: normal; /* Allows text to wrap naturally */
