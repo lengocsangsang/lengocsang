@@ -74,13 +74,7 @@ export default async function newsFunction(query) {
 
     // 6. FETCH FOR NEWS
     const resForNews = await fetch(
-      `https://gnews.io/api/v4/top-headlines?category=${query}&lang=ja&country=jp&apikey=${apiKeyForNews}`,
-      {
-        mode: "cors", // Explicitly request CORS mode
-        headers: {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", // Mimics a browser request
-        },
-      }
+      `https://gnews.io/api/v4/top-headlines?category=${query}&lang=ja&country=jp&apikey=${apiKeyForNews}`
     );
     const resultForNews = await resForNews.json();
     // 7. REMOVE LOADING...FROM newsRenderEl
