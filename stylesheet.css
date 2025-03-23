@@ -349,12 +349,15 @@ h6 {
   background-color: #212529;
 }
 
+/* CSS FOR NEWS RENDER */
+/* news page title */
 .news {
   /* background-color: blue; */
   margin-bottom: 10px;
   font-size: 48px;
 }
 
+/* topics for news */
 #country-button {
   margin: 2px;
   font-size: 15px;
@@ -374,6 +377,8 @@ h6 {
   box-shadow: 0 0 5px #495057;
   cursor: progress;
 }
+
+/* NEWS RENDER: news-render/li:news-content and a:newsUrl */
 .news-render {
   display: flex;
   flex-direction: column;
@@ -388,6 +393,7 @@ h6 {
   border-radius: 5%;
   padding-top: 20px;
   align-items: center;
+  font-size: 24px;
 }
 
 /* li element */
@@ -398,7 +404,8 @@ h6 {
   box-sizing: border-box;
 }
 
-.news-render a {
+/* a element */
+.newsUrl {
   font-size: 10px;
   padding-left: 56px;
   padding-bottom: 12px;
@@ -815,10 +822,15 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   }
 }
 
+/* NEWS RENDER FOR SMARTPHONE */
 .news-render {
   display: flex;
   flex-direction: column;
+  align-items: left;
   gap: 10px;
+
+  padding-left: 10px;
+  padding-bottom: 0;
 
   margin: 10px auto;
   width: 80%;
@@ -827,18 +839,23 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
   background-color: #f1f3f5;
   text-align: left;
   border-radius: 5%;
-  padding-top: 5px;
-  align-items: left;
+  padding-top: 20px;
   word-wrap: break-word; /* Allows long words to break */
   overflow-wrap: break-word; /* Ensures text wraps within container */
   white-space: normal; /* Allows text to wrap naturally*/
   font-size: 10px;
-  padding-left: 10px;
 }
 
 .news-content {
   font-size: 10px;
   line-height: 1.2;
   padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.newsUrl {
+  font-size: 8px;
+  line-height: 1.2;
+  padding-left: 12px;
   box-sizing: border-box;
 }

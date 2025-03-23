@@ -24,6 +24,7 @@ function renderFunction(resultForNews) {
       // Create news URL element
       const newsUrl = document.createElement("a");
       newsUrl.href = resultForNews.articles[i].url;
+      newsUrl.classList.add("newsUrl");
       newsUrl.textContent = resultForNews.articles[i].url;
       newsUrl.target = "_blank";
 
@@ -44,6 +45,7 @@ function renderFunction(resultForNews) {
 
       // Create news URL element
       const newsUrl = document.createElement("a");
+      newsUrl.classList.add("newsUrl");
       newsUrl.href = resultForNews.articles[i].url;
       newsUrl.textContent = resultForNews.articles[i].url;
       newsUrl.target = "_blank";
