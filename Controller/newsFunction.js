@@ -91,6 +91,7 @@ export default async function newsFunction(query) {
 
     renderFunction(resultForNews);
   } catch (error) {
+    console.log(error);
     // 7.2 REPLACE "LOADING..." WITH "ERROR FETCHING NEWS"
     newsRenderEl.textContent = "ERROR FETCHING NEWS";
     // 7.3 REMOVE "ERROR FETCHING NEWS" AFTER 5000ms
