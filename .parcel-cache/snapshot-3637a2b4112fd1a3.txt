@@ -1,5 +1,5 @@
-1345
-14E:\mypage\dist133873823413470152 1
+1347
+14E:\mypage\dist133873829263217967 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 33E:\mypage\dist\index.44b7042d.css133873816196959805 0
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
@@ -52,11 +52,12 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133873823283829051 0
+24E:\mypage\stylesheet.css133873829118983752 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
 31E:\mypage\node_modules\boolbase133855864640810931 1
+37E:\mypage\dist\index.848b2c3a.css.map133873829263198096 0
 59E:\mypage\node_modules\css-tree\cjs\syntax\node\Comment.cjs133855864650678278 0
 53E:\mypage\node_modules\nth-check\lib\esm\index.js.map133855864648884865 0
 46E:\mypage\node_modules\css-tree\lib\version.js133855864685102450 0
@@ -73,6 +74,7 @@
 31E:\mypage\node_modules\css-what133855864651189616 1
 72E:\mypage\node_modules\csso\node_modules\css-tree\lib\convertor\index.js133855864677396510 0
 62E:\mypage\node_modules\csso\node_modules\css-tree\cjs\data.cjs133855864656174398 0
+33E:\mypage\dist\index.848b2c3a.css133873829263006396 0
 49E:\mypage\node_modules\nth-check\lib\esm\index.js133855864641177805 0
 40E:\mypage\node_modules\csso\node_modules133855864633372126 1
 50E:\mypage\node_modules\svgo\plugins\mergeStyles.js133855864668301658 0
@@ -1337,7 +1339,7 @@
 33E:\mypage\dist\index.f15fa28b.css133873823413210832 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133873823413200865 0
+25E:\mypage\dist\index.html133873829263006396 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0

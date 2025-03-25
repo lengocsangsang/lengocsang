@@ -122,10 +122,10 @@ h6 {
 }
 
 .taskList {
-  margin: 35px auto;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  width: 68%;
+  margin: 30px auto;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  width: 70%;
   height: 60vh;
   text-align: left;
   /* list-style-type: none; */
