@@ -1,5 +1,5 @@
-1335
-14E:\mypage\dist133873806413699663 1
+1337
+14E:\mypage\dist133873812774160153 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -51,7 +51,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133873806237209002 0
+24E:\mypage\stylesheet.css133873812616405780 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -250,6 +250,7 @@
 63E:\mypage\node_modules\css-tree\lib\syntax\node\SelectorList.js133855864683699460 0
 50E:\mypage\node_modules\domutils\lib\stringify.d.ts133855864668612660 0
 42E:\mypage\node_modules\svgo\lib\builtin.js133855864651389079 0
+33E:\mypage\dist\index.48b5ea55.css133873812773096734 0
 57E:\mypage\node_modules\css-tree\lib\parser\SyntaxError.js133855864684357265 0
 41E:\mypage\node_modules\svgo\lib\parser.js133855864651917826 0
 66E:\mypage\node_modules\entities\lib\generated\encode-html.d.ts.map133855864660700551 0
@@ -1304,6 +1305,7 @@
 37E:\mypage\dist\index.449d9689.css.map133871798110262500 0
 37E:\mypage\dist\index.60928911.css.map133872067506668578 0
 36E:\mypage\dist\index.47d5a285.js.map133871439647132243 0
+37E:\mypage\dist\index.48b5ea55.css.map133873812774160153 0
 33E:\mypage\dist\index.56496b74.css133861918427926245 0
 37E:\mypage\dist\index.56496b74.css.map133861918428492501 0
 37E:\mypage\dist\index.585f4c19.css.map133871852867786103 0
@@ -1327,7 +1329,7 @@
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133873806413573910 0
+25E:\mypage\dist\index.html133873812773096734 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
