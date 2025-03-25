@@ -1,5 +1,5 @@
-1343
-14E:\mypage\dist133873820122979692 1
+1345
+14E:\mypage\dist133873823413470152 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 33E:\mypage\dist\index.44b7042d.css133873816196959805 0
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
@@ -52,7 +52,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133873819962966608 0
+24E:\mypage\stylesheet.css133873823283829051 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -1085,6 +1085,7 @@
 58E:\mypage\node_modules\css-tree\lib\syntax\atrule\media.js133855864681029591 0
 72E:\mypage\node_modules\css-tree\lib\syntax\node\PseudoElementSelector.js133855864683432415 0
 57E:\mypage\node_modules\css-tree\lib\syntax\node\String.js133855864683855231 0
+37E:\mypage\dist\index.f15fa28b.css.map133873823413460158 0
 63E:\mypage\node_modules\css-tree\lib\syntax\node\TypeSelector.js133855864684818911 0
 63E:\mypage\node_modules\css-tree\lib\syntax\node\UnicodeRange.js133855864684854538 0
 56E:\mypage\node_modules\css-tree\lib\syntax\node\Value.js133855864684991245 0
@@ -1333,9 +1334,10 @@
 32E:\mypage\dist\index.daff4eca.js133867105186341344 0
 33E:\mypage\dist\index.e9c839d1.css133861870684440603 0
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
+33E:\mypage\dist\index.f15fa28b.css133873823413210832 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133873820122552882 0
+25E:\mypage\dist\index.html133873823413200865 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
