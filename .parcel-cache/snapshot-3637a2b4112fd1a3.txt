@@ -1,5 +1,5 @@
-1349
-14E:\mypage\dist133874190027018677 1
+1351
+14E:\mypage\dist133874191339719002 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 33E:\mypage\dist\index.44b7042d.css133873816196959805 0
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
@@ -52,7 +52,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133874189510551935 0
+24E:\mypage\stylesheet.css133874191266666394 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -292,6 +292,7 @@
 48E:\mypage\node_modules\svgo\dist\svgo.browser.js133855864651149704 0
 70E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser\create.js133855864674791411 0
 75E:\mypage\node_modules\csso\node_modules\css-tree\cjs\syntax\config\mix.cjs133855864669844364 0
+33E:\mypage\dist\index.9711ef5b.css133874191339492975 0
 70E:\mypage\node_modules\entities\lib\generated\decode-data-xml.d.ts.map133855864656646697 0
 36E:\mypage\node_modules\svgo\bin\svgo133855864640790987 0
 67E:\mypage\node_modules\entities\lib\generated\decode-data-html.d.ts133855864666988943 0
@@ -1082,6 +1083,7 @@
 59E:\mypage\node_modules\css-tree\lib\syntax\node\Function.js133855864677499151 0
 62E:\mypage\node_modules\css-tree\cjs\syntax\node\IdSelector.cjs133855864668380790 0
 55E:\mypage\node_modules\css-tree\lib\syntax\node\Hash.js133855864677854482 0
+37E:\mypage\dist\index.9711ef5b.css.map133874191339699068 0
 51E:\mypage\node_modules\css-tree\cjs\lexer\trace.cjs133855864674032611 0
 63E:\mypage\node_modules\css-tree\lib\syntax\node\MediaFeature.js133855864681282940 0
 70E:\mypage\node_modules\css-tree\lib\syntax\node\PseudoClassSelector.js133855864683257191 0
@@ -1341,7 +1343,7 @@
 33E:\mypage\dist\index.f15fa28b.css133873823413210832 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133874190026658629 0
+25E:\mypage\dist\index.html133874191339492975 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
