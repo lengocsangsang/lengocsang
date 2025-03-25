@@ -30,6 +30,7 @@ h6 {
   display: flex;
 }
 
+/* HOMEPAGE-LEFT-CONTAINER */
 .homepage-left-container {
   height: 100vh;
   width: 10%;
@@ -37,6 +38,72 @@ h6 {
   position: relative;
 }
 
+.panel-button-container {
+  position: relative;
+  height: 20%;
+}
+
+.side-panel-button {
+  background-color: #dee2e6;
+  color: #ebfbee;
+  box-sizing: border-box;
+
+  padding: 1vw 2vw;
+  border-radius: 24px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  border: none;
+  outline: none;
+
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+
+  transition: all 0.3s ease-in;
+  transform-origin: center;
+}
+
+.side-panel-button:hover {
+  color: #f8f9fa;
+  background-color: #212529;
+
+  outline: 5 solid white;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.side-panel {
+  position: fixed;
+  margin-top: 100px;
+  width: 22.3vh;
+  height: 12vh;
+  font-weight: bold;
+  left: -22.3vw;
+  transition: transform 0.3s ease;
+}
+
+.panel-item {
+  width: 10vw;
+  height: 2.6vw;
+  transition: all 0.3s ease;
+  border-radius: 36px;
+  color: #dee2e6;
+  padding-left: 1vw;
+  line-height: 36px;
+  font-size: 100%;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.panel-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+/* HOMEPAGE-CENTER-CONTAINER  */
 .homepage-center-container {
   height: 100vh;
   width: 80%;
@@ -55,8 +122,6 @@ h6 {
 .svg {
   margin: 10px;
 }
-
-/* STYLE FOR CENTER-CONTAINER ELEMENTS */
 
 .title-time {
   min-width: 70px;
@@ -170,72 +235,7 @@ h6 {
   transform: scale(1.1);
 }
 
-.panel-button-container {
-  position: relative;
-  height: 20%;
-}
-
-.side-panel-button {
-  background-color: #dee2e6;
-  color: #ebfbee;
-  box-sizing: border-box;
-
-  padding: 1vw 2vw;
-  border-radius: 24px;
-
-  font-size: 16px;
-  font-weight: bold;
-
-  border: none;
-  outline: none;
-
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translate(-50%);
-
-  transition: all 0.3s ease-in;
-  transform-origin: center;
-}
-
-.side-panel-button:hover {
-  color: #f8f9fa;
-  background-color: #212529;
-
-  outline: 5 solid white;
-  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.5);
-}
-
-.side-panel {
-  position: fixed;
-  margin-top: 100px;
-  width: 22.3vh;
-  height: 12vh;
-  font-weight: bold;
-  left: -22.3vw;
-  transition: transform 0.3s ease;
-}
-
-.panel-item {
-  width: 10vw;
-  height: 2.6vw;
-  transition: all 0.3s ease;
-  border-radius: 36px;
-  color: #dee2e6;
-  padding-left: 1vw;
-  line-height: 36px;
-  font-size: 100%;
-  cursor: pointer;
-  list-style-type: none;
-}
-
-.panel-item:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-  background-color: #343a40;
-  color: #f8f9fa;
-}
-
-/* MANIPULATE MOVING MESSAGE INSIDE RIGHT-CONTAINER */
+/* HOMEPAGE-RIGHT-CONTAINER */
 .homepage-right-container {
   height: 100vh;
   width: 10%;
@@ -253,6 +253,19 @@ h6 {
   font-weight: 700;
   animation: moveUp 5s ease-in-out infinite;
   z-index: 1000;
+}
+
+/* Fireworks Effect */
+.firework {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffeb3b; /* Yellow */
+  border-radius: 50%;
+  opacity: 0;
+  animation: firework-burst 5s ease-in-out infinite,
+    random-fireworks 5s ease infinite;
+  box-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b, 0 0 15px #ffeb3b;
 }
 
 .bitcoin-title {
@@ -312,8 +325,7 @@ h6 {
   position: relative;
 }
 
-/* SECTION */
-
+/* NEW SECTION */
 .news-general-container {
   height: 100vh;
   width: 100%;
@@ -362,7 +374,7 @@ h6 {
 }
 
 /* topics for news */
-#country-button {
+#news-button {
   margin: 2px;
   font-size: 16px;
   padding: 4px 8px;
@@ -370,14 +382,14 @@ h6 {
   outline: none;
 }
 
-#country-button:hover {
+#news-button:hover {
   border-radius: 12%;
   padding: 4px 8px;
   box-shadow: 0 0 5px #495057;
   cursor: pointer;
 }
 
-#country-button:active {
+#news-button:active {
   box-shadow: 0 0 5px #495057;
   cursor: progress;
 }
@@ -423,14 +435,7 @@ h6 {
   display: none; /* Hide initially */
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+/* KEYFRAMES */
 
 /* Single keyframe for consistent movement */
 @keyframes moveUp {
@@ -440,19 +445,6 @@ h6 {
   100% {
     bottom: 100%; /* Move to top of container */
   }
-}
-
-/* Fireworks Effect */
-.firework {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: #ffeb3b; /* Yellow */
-  border-radius: 50%;
-  opacity: 0;
-  animation: firework-burst 5s ease-in-out infinite,
-    random-fireworks 5s ease infinite;
-  box-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b, 0 0 15px #ffeb3b;
 }
 
 /* Fireworks burst animation */
@@ -510,34 +502,19 @@ h6 {
   }
 } */
 
-/* .firework-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  animation: random-fireworks 2s linear infinite;
-} */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-/* KNOWLEDGE */
-/* 
-What is vertical-align?
-The vertical-align CSS property controls how inline or inline-block elements align vertically relative to each other 
-or their parent’s text baseline. It’s most commonly used with things like text, images, <span>, <svg>, or other elements 
-that sit inline within a line of content—like your <h1> with the SVG and "Today is" text.
-
-By default, inline elements align their baselines (the invisible line that text sits on, like the bottom of most letters 
-excluding descenders like "g" or "p"). But vertical-align lets you shift that alignment to places like the top, middle, 
-bottom, or even specific pixel offsets. */
-
-/* baseline (default): Aligns the element’s baseline with the parent’s text baseline.
-top: Aligns the top of the element with the top of the tallest inline element in the line.
-bottom: Aligns the bottom of the element with the bottom of the lowest inline element (your fix!).
-middle: Aligns the middle of the element with the parent’s baseline plus half the x-height (roughly centers it vertically with text).
-text-top: Aligns the element’s top with the top of the parent’s text.
-text-bottom: Aligns the element’s bottom with the bottom of the parent’s text.
-Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align: -5px (shifts down) relative to the baseline. */
+/* CSS FOR SMARTPHONE */
 @media (max-width: 430px) {
   /* Styles for iPhone 12, 13, 14, 15 */
+  /* HOMEPAGE */
   .homepage-general-container {
     background-color: #f8f9fa;
     height: 100vh;
@@ -549,7 +526,17 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     grid-template-columns: 20% 80%;
     grid-template-rows: 80% 20%;
   }
+  /* HOMEPAGE-LEFT-CONTAINER */
 
+  .homepage-left-container {
+    background-color: #f8f9fa;
+    height: 80%;
+    width: 0vw;
+    margin: 0;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    display: none;
+  }
   .panel-button-container {
     position: relative;
     height: 20%;
@@ -620,16 +607,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     display: none;
   }
 
-  .homepage-left-container {
-    background-color: #f8f9fa;
-    height: 80%;
-    width: 0vw;
-    margin: 0;
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
-    display: none;
-  }
-
+  /* HOMEPAGE-CENTER-CONTAINER */
   .homepage-center-container {
     background-color: #f8f9fa;
     height: 80%;
@@ -740,6 +718,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     z-index: 1000;
   }
 
+  /* HOMEPAGE-RIGHT-CONTAINER */
   .homepage-right-container {
     background-color: #f8f9fa;
     height: 20%;
@@ -812,7 +791,7 @@ Pixel/Percentage Values: E.g., vertical-align: 5px (shifts up) or vertical-align
     /* left: -50px; */
   }
 
-  /* NEWS RENDER FOR SMARTPHONE */
+  /* NEWS-GENERAL-CONTAINER */
   .news-render {
     display: flex;
     flex-direction: column;
