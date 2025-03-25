@@ -104,7 +104,6 @@ h6 {
   transition: all 0.3s ease;
 
   text-align: center;
-  overflow: scroll;
 }
 
 .taskInputBox:focus {
@@ -128,6 +127,8 @@ h6 {
   width: 50%;
   text-align: left;
   /* list-style-type: none; */
+
+  overflow: scroll;
 }
 
 .task-item {
