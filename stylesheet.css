@@ -104,6 +104,7 @@ h6 {
   transition: all 0.3s ease;
 
   text-align: center;
+  overflow: scroll;
 }
 
 .taskInputBox:focus {

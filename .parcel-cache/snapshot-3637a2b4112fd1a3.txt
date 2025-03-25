@@ -1,5 +1,5 @@
-1330
-14E:\mypage\dist133871852867954890 1
+1333
+14E:\mypage\dist133873793088265271 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
@@ -51,7 +51,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133871852761334553 0
+24E:\mypage\stylesheet.css133873792463011377 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -265,7 +265,7 @@
 39E:\mypage\node_modules\svgo\lib\svgo.js133855864656114492 0
 42E:\mypage\node_modules\svgo\lib\types.d.ts133855864658392685 0
 50E:\mypage\node_modules\css-tree\lib\lexer\match.js133855864680996597 0
-33E:\mypage\dist\index.60928911.css133861862060421238 0
+33E:\mypage\dist\index.60928911.css133872067506568844 0
 32E:\mypage\dist\index.47d5a285.js133871439645719033 0
 39E:\mypage\node_modules\svgo\lib\xast.js133855864659072816 0
 43E:\mypage\node_modules\svgo\lib\svgo\coa.js133855864656646697 0
@@ -1024,6 +1024,7 @@
 44E:\mypage\node_modules\css-what\lib\commonjs133855864655320960 1
 38E:\mypage\node_modules\css-what\lib\es133855864655479580 1
 53E:\mypage\node_modules\css-what\lib\es\parse.d.ts.map133855864649272906 0
+32E:\mypage\dist\icon.cc9f4f8c.svg133872067504823515 0
 47E:\mypage\node_modules\css-what\lib\es\parse.js133855864645371137 0
 57E:\mypage\node_modules\css-what\lib\es\stringify.d.ts.map133855864650293809 0
 49E:\mypage\node_modules\css-what\lib\es\types.d.ts133855864655509487 0
@@ -1166,6 +1167,7 @@
 73E:\mypage\node_modules\css-tree\cjs\syntax\node\PseudoElementSelector.cjs133855864672790091 0
 57E:\mypage\node_modules\css-tree\cjs\syntax\node\Ratio.cjs133855864672885610 0
 60E:\mypage\node_modules\css-tree\cjs\syntax\node\Selector.cjs133855864673316153 0
+37E:\mypage\dist\index.9579b9bd.css.map133873793088245331 0
 55E:\mypage\node_modules\css-select\lib\esm\attributes.js133855864645320873 0
 64E:\mypage\node_modules\css-tree\cjs\syntax\node\SelectorList.cjs133855864673434979 0
 58E:\mypage\node_modules\css-tree\cjs\syntax\node\String.cjs133855864673554494 0
@@ -1288,8 +1290,9 @@
 32E:\mypage\html\professional.html133852382220409207 0
 30E:\mypage\DOTENV\config.dotenv133871451548113635 0
 32E:\mypage\dist\icon.f22edd40.svg133867087003434428 0
-32E:\mypage\dist\index.057eb596.js133861862060421238 0
-36E:\mypage\dist\index.057eb596.js.map133861862060576171 0
+32E:\mypage\dist\index.057eb596.js133872067505302210 0
+33E:\mypage\dist\index.9579b9bd.css133873793086583440 0
+36E:\mypage\dist\index.057eb596.js.map133872067506359391 0
 33E:\mypage\dist\index.13f025d7.css133871829989387396 0
 32E:\mypage\dist\index.1544d692.js133871839718140537 0
 36E:\mypage\dist\index.239c75e8.js.map133867136410488685 0
@@ -1298,7 +1301,7 @@
 32E:\mypage\dist\index.3d214d75.js133855872791103164 0
 33E:\mypage\dist\index.449d9689.css133871798110056709 0
 37E:\mypage\dist\index.449d9689.css.map133871798110262500 0
-37E:\mypage\dist\index.60928911.css.map133861862060556077 0
+37E:\mypage\dist\index.60928911.css.map133872067506668578 0
 36E:\mypage\dist\index.47d5a285.js.map133871439647132243 0
 33E:\mypage\dist\index.56496b74.css133861918427926245 0
 37E:\mypage\dist\index.56496b74.css.map133861918428492501 0
@@ -1322,7 +1325,7 @@
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133871852867464044 0
+25E:\mypage\dist\index.html133873793086780021 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133867131299797627 0
 33E:\mypage\Controller\sidePanel.js133854953507319273 0
