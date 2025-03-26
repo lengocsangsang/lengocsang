@@ -45,6 +45,7 @@ function getCashflowInfo() {
         localStorage.setItem("cashflow", JSON.stringify(cashflowArray));
         // CREATE NEW ROW
         const newCashflowRow = document.createElement("tr");
+        newCashflowRow.classList.add("new-tr");
 
         // CREATE AND ADD DATE CELL TO ROW
         const dateCell = document.createElement("td");
