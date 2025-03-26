@@ -19,21 +19,21 @@ function getCashflowInfo() {
         cashflowArray.push(cashflowObject);
         // 3. save cashflowArray to localstorage as "cashflow"
         localStorage.setItem("cashflow", JSON.stringify(cashflowArray));
+        // CREATE NEW ROW
+        const newCashflowRow = document.createElement("tr");
+        // CREATE AND ADD DATE CELL TO ROW
+        const dateCell = document.createElement("td");
+        dateCell.textContent = cashflowDate;
+        newCashflowRow.appendChild(dateCell);
+        // CREATE AND ADD money CELL TO ROW
+        const moneyCell = document.createElement("td");
+        moneyCell.textContent = cashflowMoney;
+        newCashflowRow.append(moneyCell);
+        // ADD newCashflowRow to cashflowTableBody
+        cashflowTableBody.appendChild(newCashflowRow);
       } else {
         console.log("please input date and money");
       }
-      // CREATE NEW ROW
-      const newCashflowRow = document.createElement("tr");
-      // CREATE AND ADD DATE CELL TO ROW
-      const dateCell = document.createElement("td");
-      dateCell.textContent = cashflowDate;
-      newCashflowRow.appendChild(dateCell);
-      // CREATE AND ADD money CELL TO ROW
-      const moneyCell = document.createElement("td");
-      moneyCell.textContent = cashflowMoney;
-      newCashflowRow.append(moneyCell);
-      // ADD newCashflowRow to cashflowTableBody
-      cashflowTableBody.appendChild(newCashflowRow);
     } else {
       cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
       const cashflowDate = document.querySelector(".input-date").value;
@@ -43,23 +43,23 @@ function getCashflowInfo() {
         cashflowObject.money = cashflowMoney;
         cashflowArray.push(cashflowObject);
         localStorage.setItem("cashflow", JSON.stringify(cashflowArray));
+        // CREATE NEW ROW
+        const newCashflowRow = document.createElement("tr");
+
+        // CREATE AND ADD DATE CELL TO ROW
+        const dateCell = document.createElement("td");
+        dateCell.textContent = cashflowDate;
+        newCashflowRow.appendChild(dateCell);
+
+        // CREATE AND ADD money CELL TO ROW
+        const moneyCell = document.createElement("td");
+        moneyCell.textContent = cashflowMoney;
+        newCashflowRow.append(moneyCell);
+
+        // ADD newCashflowRow to cashflowTableBody
+        cashflowTableBody.appendChild(newCashflowRow);
+        console.log(cashflowArray);
       }
-      // CREATE NEW ROW
-      const newCashflowRow = document.createElement("tr");
-
-      // CREATE AND ADD DATE CELL TO ROW
-      const dateCell = document.createElement("td");
-      dateCell.textContent = cashflowDate;
-      newCashflowRow.appendChild(dateCell);
-
-      // CREATE AND ADD money CELL TO ROW
-      const moneyCell = document.createElement("td");
-      moneyCell.textContent = cashflowMoney;
-      newCashflowRow.append(moneyCell);
-
-      // ADD newCashflowRow to cashflowTableBody
-      cashflowTableBody.appendChild(newCashflowRow);
-      console.log(cashflowArray);
     }
   });
 }
