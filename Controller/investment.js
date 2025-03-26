@@ -99,13 +99,24 @@ function computeIRR(
 }
 
 function triggerMWRRcalculation() {
+  // RETRIEVE DATA FROM LOCALSTORAGE
   const amountFromLocalStorage =
     JSON.parse(localStorage.getItem("cashflow")) || [];
   const cashFlows = amountFromLocalStorage.map((each) => each.money);
+  // CLICK ON BUTTON TO IMPLEMENT CALCULATING
   document.querySelector(".mwrr").addEventListener("click", () => {
+    // REMOVE ALL PREVIOUS RESULT IF AVAILABLE FIRST
+    if (document.querySelectorAll(".box-calculate-render p")) {
+      document
+        .querySelectorAll(".box-calculate-render p")
+        .forEach((p) => p.remove());
+    }
+
+    // CALL THE CALCULATION FUNCTION AND GET THE RESULT
     const mwrr = computeIRR(cashFlows);
 
     if (mwrr !== null && mwrr !== undefined) {
+      // RENDER THE RESULT
       const calculateedResultName = document.createElement("p");
       calculateedResultName.classList.add("box-calculate-result-name");
       calculateedResultName.textContent = "MWRR";
@@ -123,21 +134,18 @@ function triggerMWRRcalculation() {
 }
 
 function clearCalculateResult() {
+  // CHECK IF ANY RESULT RENDERED OR NOT
   if (document.querySelectorAll(".box-calculate-render p")) {
+    // CLICK ON THE CLEAR BUTTON
     document
       .querySelector(".box-calculate-clear-button")
       .addEventListener("click", () => {
+        // REMOVE ALL THE RENDERED RESULT
         document
           .querySelectorAll(".box-calculate-render p")
           .forEach((p) => p.remove());
       });
   }
-  document
-    .querySelector(".table-cashflow-remove-button")
-    .addEventListener("click", () => {
-      localStorage.removeItem("cashflow");
-      document.querySelectorAll("tr.new-tr").forEach((tr) => tr.remove());
-    });
 }
 
 export default function investmentFunction() {

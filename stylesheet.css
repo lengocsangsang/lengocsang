@@ -111,6 +111,10 @@ h6 {
   background-color: #f5f5f5;
 }
 
+.material-symbols-outlined {
+  display: none;
+}
+
 /* LOGO */
 .icon {
   display: flex;
@@ -386,7 +390,7 @@ h6 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
-  transition: background-color 0.3s ease; /* Add hover effect */
+  transition: all 0.4s ease; /* Add hover effect */
 }
 
 .button-add:hover {
@@ -428,7 +432,7 @@ h6 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
-  transition: background-color 0.3s ease; /* Add hover effect */
+  transition: all 0.4s ease; /* Add hover effect */
 }
 
 .table-cashflow-remove-button:hover {
@@ -497,11 +501,13 @@ h6 {
   border: 1px solid #ccc; /* Light border */
   border-radius: 4px; /* Rounded corners */
   font-size: 1em; /* Adjust font size */
+  transition: all 0.4s ease;
 }
 
 .box-calculate-button:hover {
   background-color: #212529;
   color: #f8f9fa;
+  cursor: pointer;
 }
 
 .box-calculate-render {
@@ -609,6 +615,8 @@ h6 {
   position: absolute;
   bottom: 3vh;
   right: 11vw;
+
+  transition: all 0.4s ease;
 }
 
 .back-to-homepage:hover {
@@ -765,7 +773,6 @@ h6 {
 
 /* CSS FOR SMARTPHONE */
 @media (max-width: 430px) {
-  /* Styles for iPhone 12, 13, 14, 15 */
   /* HOMEPAGE */
   .homepage-general-container {
     background-color: #f8f9fa;
@@ -869,6 +876,14 @@ h6 {
     grid-row: 1 / 2;
   }
 
+  .material-symbols-outlined {
+    background-color: #f8f9fa;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 15%;
+  }
+
   /* CENTER CONTAINER ITEMS */
   .taskInputBox {
     width: 75%;
@@ -951,7 +966,7 @@ h6 {
   .clearTaskBtn {
     position: absolute;
     bottom: 22vh;
-    right: 12vw;
+    right: 22vw;
     /* width: 50px; */
     background-color: #dee2e6;
     color: #ebfbee;
@@ -968,6 +983,10 @@ h6 {
     cursor: pointer;
 
     z-index: 1000;
+  }
+
+  .clearTaskBtn:hover {
+    background-color: #c92a2a;
   }
 
   /* HOMEPAGE-RIGHT-CONTAINER */
