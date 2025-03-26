@@ -24,17 +24,14 @@ function getCashflowInfo() {
       }
       // CREATE NEW ROW
       const newCashflowRow = document.createElement("tr");
-
       // CREATE AND ADD DATE CELL TO ROW
       const dateCell = document.createElement("td");
       dateCell.textContent = cashflowDate;
       newCashflowRow.appendChild(dateCell);
-
       // CREATE AND ADD money CELL TO ROW
       const moneyCell = document.createElement("td");
       moneyCell.textContent = cashflowMoney;
       newCashflowRow.append(moneyCell);
-
       // ADD newCashflowRow to cashflowTableBody
       cashflowTableBody.appendChild(newCashflowRow);
     } else {
@@ -62,6 +59,7 @@ function getCashflowInfo() {
 
       // ADD newCashflowRow to cashflowTableBody
       cashflowTableBody.appendChild(newCashflowRow);
+      console.log(cashflowArray);
     }
   });
 }
@@ -69,79 +67,35 @@ function getCashflowInfo() {
 function clearCashflowTable() {
   document
     .querySelector(".table-cashflow-remove-button")
-    .addEventListener("click", localStorage.clear());
+    .addEventListener("click", () => {
+      localStorage.removeItem("cashflow");
+    });
 }
 
 export default function investmentFunction() {
   document.addEventListener("DOMContentLoaded", function () {
     if (!(localStorage.getItem("cashflow") === null)) {
-      console.log("TABLEEEEEEE");
       const cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
       for (const dateMoneyPair of cashflowArray) {
         // CREATE NEW ROW
         const newCashflowRow = document.createElement("tr");
-
         // CREATE AND ADD DATE CELL TO ROW
         const dateCell = document.createElement("td");
         dateCell.textContent = dateMoneyPair.date;
         newCashflowRow.appendChild(dateCell);
-
         // CREATE AND ADD money CELL TO ROW
         const moneyCell = document.createElement("td");
         moneyCell.textContent = dateMoneyPair.money;
         newCashflowRow.append(moneyCell);
-
         // ADD newCashflowRow to cashflowTableBody
         cashflowTableBody.appendChild(newCashflowRow);
+        console.log(cashflowArray);
       }
     }
   });
   getCashflowInfo();
   clearCashflowTable();
 }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const tableBody = document.querySelector("#infoTable tbody");
-//   const nameInput = document.getElementById("nameInput");
-//   const ageInput = document.getElementById("ageInput");
-//   const cityInput = document.getElementById("cityInput");
-//   const addRowButton = document.getElementById("addRowButton");
-
-//   addRowButton.addEventListener("click", function () {
-//     const name = nameInput.value.trim();
-//     const age = ageInput.value.trim();
-//     const city = cityInput.value.trim();
-
-//     if (name === "" || age === "" || city === "") {
-//       alert("Please fill out all fields.");
-//       return;
-//     }
-
-//     // Create a new row
-//     const newRow = document.createElement("tr");
-
-//     // Add cells to the row
-//     const nameCell = document.createElement("td");
-//     nameCell.textContent = name;
-//     newRow.appendChild(nameCell);
-
-//     const ageCell = document.createElement("td");
-//     ageCell.textContent = age;
-//     newRow.appendChild(ageCell);
-
-//     const cityCell = document.createElement("td");
-//     cityCell.textContent = city;
-//     newRow.appendChild(cityCell);
-
-//     // Append the new row to the table body
-//     tableBody.appendChild(newRow);
-
-//     // Clear input fields
-//     nameInput.value = "";
-//     ageInput.value = "";
-//     cityInput.value = "";
-//   });
-// });
 
 // ### **Code JavaScript:**
 // ```javascript
