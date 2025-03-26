@@ -6,16 +6,6 @@ import fetchCoinList from "./Controller/getCoinList.js";
 import newsRender from "./Controller/newsRender.js";
 import investmentFunction from "./Controller/investment.js";
 
-function disableScroll() {
-  document.documentElement.style.overflow = "hidden"; // Disable scrolling
-  document.body.style.overflow = "hidden";
-  document.body.style.height = "100vh"; // Prevent body from exceeding viewport
-  document.body.style.position = "fixed"; // Fix body position to prevent movement
-
-  // document.addEventListener("keydown", preventArrowKeys, false);
-}
-disableScroll();
-
 // HOMEPAGE
 // TITLE UPDATING
 updateClock();

@@ -1,5 +1,5 @@
-1397
-14E:\mypage\dist133874859597903571 1
+1399
+14E:\mypage\dist133874863748888227 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 33E:\mypage\dist\index.44b7042d.css133873816196959805 0
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
@@ -13,7 +13,7 @@
 64E:\mypage\node_modules\svgo\plugins\addAttributesToSVGElement.js133855864661604539 0
 14E:\mypage\html133855861826538300 1
 13E:\mypage\css133855861826311205 1
-18E:\mypage\index.js133874736155035746 0
+18E:\mypage\index.js133874863521634233 0
 73E:\mypage\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Nth.cjs133855864670175584 0
 33E:\mypage\dist\index.ee8bdd7e.css133871439645719033 0
 51E:\mypage\node_modules\nth-check\lib\esm\parse.d.ts133855864654740865 0
@@ -1383,6 +1383,8 @@
 37E:\mypage\dist\index.c86c89ce.css.map133874829297478686 0
 37E:\mypage\dist\index.d97237fd.css.map133873806413689669 0
 32E:\mypage\dist\index.daff4eca.js133867105186341344 0
+32E:\mypage\dist\index.dc781a84.js133874863748657768 0
+36E:\mypage\dist\index.dc781a84.js.map133874863748882820 0
 33E:\mypage\dist\index.e9c839d1.css133861870684440603 0
 37E:\mypage\dist\index.efa0e8bb.css.map133861941393317076 0
 33E:\mypage\dist\index.f15fa28b.css133873823413210832 0
@@ -1390,7 +1392,7 @@
 32E:\mypage\dist\index.f5783793.js133874505050625725 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133874859596631138 0
+25E:\mypage\dist\index.html133874863748657768 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133874206427561173 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0
