@@ -111,9 +111,9 @@ h6 {
   background-color: #f5f5f5;
 }
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
   display: none;
-}
+} */
 
 /* LOGO */
 .icon {
@@ -878,8 +878,8 @@ h6 {
     background-color: #f8f9fa;
     border: none;
     position: absolute;
-    top: 20%;
-    right: 35%;
+    top: 0;
+    right: 15%;
     display: block;
   }
 
