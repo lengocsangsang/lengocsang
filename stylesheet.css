@@ -878,7 +878,7 @@ h6 {
   .material-symbols-outlined {
     /* color: #212529; */
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     /* display: inline-block; */
   }
