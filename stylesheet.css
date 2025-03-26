@@ -113,9 +113,6 @@ h6 {
 
 .material-symbols-outlined {
   position: absolute;
-  opacity: 0;
-  border: none;
-  outline: none;
   left: -100px;
 }
 
@@ -879,12 +876,11 @@ h6 {
   }
 
   .material-symbols-outlined {
-    background-color: #f8f9fa;
-    border: none;
-    position: absolute;
+    /* color: #212529; */
+    /* position: absolute; */
+    left: 0;
     top: 0;
-    right: 15%;
-    display: block;
+    /* display: inline-block; */
   }
 
   /* CENTER CONTAINER ITEMS */
