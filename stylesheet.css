@@ -309,14 +309,25 @@ h6 {
   animation-delay: 20s; /* Starts after BNB */
 }
 
-/* FAMILY SECTION */
-.family-general-container {
+/* INVESTMENT SECTION */
+.investment-general-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr;
   width: 100%;
   height: 100vh;
   background-color: #f5f5f5;
   position: relative;
 }
 
+.investment-left-container {
+  background-color: white;
+}
+.investment-center-container {
+}
+.investment-right-container {
+  background-color: white;
+}
 /* PROFESSIONAL SECTION */
 .professional-general-container {
   width: 100%;

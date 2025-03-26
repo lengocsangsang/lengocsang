@@ -23,7 +23,7 @@ export default function manipulateSidePanel() {
   document
     .getElementById("panel-item-family")
     .addEventListener("click", function () {
-      const element = document.querySelector(".family-general-container");
+      const element = document.querySelector(".investment-general-container");
       element.scrollIntoView();
     });
 

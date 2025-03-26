@@ -1,11 +1,11 @@
-1353
-14E:\mypage\dist133874201829767022 1
+1358
+14E:\mypage\dist133874219205966074 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 33E:\mypage\dist\index.44b7042d.css133873816196959805 0
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
 44E:\mypage\node_modules\csso\cjs\compress.cjs133855864650658337 0
 31E:\mypage\node_modules\mdn-data133855864660251155 1
-20E:\mypage\Controller133871427920131280 1
+20E:\mypage\Controller133874218182228805 1
 36E:\mypage\dist\index.2e10f4c4.js.map133855864757238495 0
 63E:\mypage\node_modules\csso\node_modules\mdn-data\l10n\css.json133855864646297377 0
 63E:\mypage\node_modules\css-tree\cjs\syntax\node\Parentheses.cjs133855864672168269 0
@@ -35,7 +35,7 @@
 27E:\mypage\node_modules\svgo133855864659639898 1
 57E:\mypage\node_modules\domutils\lib\esm\manipulation.d.ts133855864668361748 0
 35E:\mypage\node_modules\css-what\lib133855864640930622 1
-20E:\mypage\index.html133874197317228906 0
+20E:\mypage\index.html133874218633341071 0
 53E:\mypage\node_modules\nth-check\lib\esm\compile.d.ts133855864652551463 0
 60E:\mypage\node_modules\dom-serializer\lib\esm\index.d.ts.map133855864646006634 0
 53E:\mypage\node_modules\css-tree\cjs\walker\create.cjs133855864656134498 0
@@ -52,7 +52,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133874201579909045 0
+24E:\mypage\stylesheet.css133874214939325763 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -520,6 +520,7 @@
 65E:\mypage\node_modules\entities\lib\esm\decode_codepoint.d.ts.map133855864652316271 0
 63E:\mypage\node_modules\csso\lib\restructure\3-disjoinRuleset.js133855864664674909 0
 48E:\mypage\node_modules\domhandler\lib\index.d.ts133855864648538829 0
+36E:\mypage\dist\index.aa076248.js.map133874219205941652 0
 61E:\mypage\node_modules\css-tree\lib\syntax\atrule\supports.js133855864684042281 0
 59E:\mypage\node_modules\entities\lib\esm\decode_codepoint.js133855864640633064 0
 63E:\mypage\node_modules\entities\lib\esm\decode_codepoint.js.map133855864654001151 0
@@ -554,6 +555,7 @@
 48E:\mypage\node_modules\entities\lib\esm\index.js133855864650658337 0
 52E:\mypage\node_modules\entities\lib\esm\package.json133855864651219522 0
 58E:\mypage\node_modules\domutils\lib\esm\stringify.d.ts.map133855864661753062 0
+37E:\mypage\dist\index.38bb8666.css.map133874219205734054 0
 71E:\mypage\node_modules\entities\lib\esm\generated\decode-data-html.d.ts133855864666740516 0
 75E:\mypage\node_modules\entities\lib\esm\generated\decode-data-html.d.ts.map133855864654658114 0
 33E:\mypage\Controller\timeTitle.js133853140179822086 0
@@ -1310,6 +1312,7 @@
 36E:\mypage\dist\index.239c75e8.js.map133867136410488685 0
 32E:\mypage\dist\index.2e10f4c4.js133855864757154417 0
 36E:\mypage\dist\index.2f02d738.js.map133871786813727009 0
+33E:\mypage\dist\index.38bb8666.css133874219205277290 0
 32E:\mypage\dist\index.3d214d75.js133855872791103164 0
 33E:\mypage\dist\index.449d9689.css133871798110056709 0
 37E:\mypage\dist\index.449d9689.css.map133871798110262500 0
@@ -1327,7 +1330,9 @@
 36E:\mypage\dist\index.70c9891a.js.map133871446129932758 0
 33E:\mypage\dist\index.86a49b6e.css133874201829431207 0
 33E:\mypage\dist\index.9934edec.css133861954241948349 0
+34E:\mypage\Controller\investment.js133874218353509492 0
 37E:\mypage\dist\index.a9988c76.css.map133861937176064190 0
+32E:\mypage\dist\index.aa076248.js133874219205277290 0
 33E:\mypage\dist\index.b5227144.css133861959361570610 0
 36E:\mypage\dist\index.b95efbff.js.map133867109008007521 0
 32E:\mypage\dist\index.bcac2089.js133867155791446851 0
@@ -1345,10 +1350,10 @@
 33E:\mypage\dist\index.f15fa28b.css133873823413210832 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133874201829421377 0
+25E:\mypage\dist\index.html133874219205277290 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
-30E:\mypage\Controller\config.js133867131299797627 0
-33E:\mypage\Controller\sidePanel.js133854953507319273 0
+30E:\mypage\Controller\config.js133874206427561173 0
+33E:\mypage\Controller\sidePanel.js133874208086773992 0
 37E:\mypage\Controller\familySection.js133854950256755952 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0
 36E:\mypage\Controller\newsFunction.js133871835001646396 0
