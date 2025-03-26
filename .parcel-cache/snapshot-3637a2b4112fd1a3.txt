@@ -1,5 +1,5 @@
-1389
-14E:\mypage\dist133874838362389376 1
+1391
+14E:\mypage\dist133874846523458502 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 33E:\mypage\dist\index.44b7042d.css133873816196959805 0
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
@@ -53,7 +53,7 @@
 27E:\mypage\package-lock.json133855864687760636 0
 82E:\mypage\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133855864674591562 0
 22E:\mypage\package.json133857090623013853 0
-24E:\mypage\stylesheet.css133874836353027943 0
+24E:\mypage\stylesheet.css133874846118734745 0
 51E:\mypage\node_modules\domutils\lib\legacy.d.ts.map133855864657490755 0
 32E:\mypage\node_modules\@trysound133855864632688577 1
 40E:\mypage\node_modules\commander\esm.mjs133855864645446717 0
@@ -666,6 +666,7 @@
 78E:\mypage\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Brackets.cjs133855864646297377 0
 56E:\mypage\node_modules\domutils\lib\esm\traversal.js.map133855864664679988 0
 72E:\mypage\node_modules\csso\node_modules\css-tree\lib\syntax\node\Url.js133855864683557194 0
+37E:\mypage\dist\index.2727b36e.css.map133874846523448572 0
 37E:\mypage\node_modules\domhandler\lib133855864649717976 1
 41E:\mypage\node_modules\csso\cjs\utils.cjs133855864661624511 0
 50E:\mypage\node_modules\dom-serializer\package.json133855864644747818 0
@@ -1327,6 +1328,7 @@
 32E:\mypage\dist\index.1544d692.js133871839718140537 0
 36E:\mypage\dist\index.239c75e8.js.map133867136410488685 0
 36E:\mypage\dist\index.26b69f82.js.map133874513954866846 0
+33E:\mypage\dist\index.2727b36e.css133874846523308881 0
 32E:\mypage\dist\index.2e10f4c4.js133855864757154417 0
 36E:\mypage\dist\index.2f02d738.js.map133871786813727009 0
 33E:\mypage\dist\index.38bb8666.css133874219205277290 0
@@ -1382,7 +1384,7 @@
 32E:\mypage\dist\index.f5783793.js133874505050625725 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133874838358354780 0
+25E:\mypage\dist\index.html133874846523308881 0
 32E:\mypage\Controller\addTasks.js133853669506748113 0
 30E:\mypage\Controller\config.js133874206427561173 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0

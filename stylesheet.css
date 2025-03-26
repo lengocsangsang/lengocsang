@@ -880,6 +880,7 @@ h6 {
     position: absolute;
     top: 0;
     right: 15%;
+    display: block;
   }
 
   /* CENTER CONTAINER ITEMS */
@@ -964,7 +965,7 @@ h6 {
   .clearTaskBtn {
     position: absolute;
     bottom: 22vh;
-    right: 22vw;
+    right: 26vw;
     /* width: 50px; */
     background-color: #dee2e6;
     color: #ebfbee;
