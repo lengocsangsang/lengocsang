@@ -111,9 +111,13 @@ h6 {
   background-color: #f5f5f5;
 }
 
-/* .material-symbols-outlined {
-  display: none;
-} */
+.material-symbols-outlined {
+  position: absolute;
+  opacity: 0;
+  border: none;
+  outline: none;
+  left: -100px;
+}
 
 /* LOGO */
 .icon {
