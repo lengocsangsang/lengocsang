@@ -70,6 +70,8 @@ function clearCashflowTable() {
     .addEventListener("click", () => {
       localStorage.removeItem("cashflow");
     });
+
+  document.querySelectorAll("tr.new-tr").forEach((tr) => tr.remove());
 }
 
 export default function investmentFunction() {
@@ -79,6 +81,7 @@ export default function investmentFunction() {
       for (const dateMoneyPair of cashflowArray) {
         // CREATE NEW ROW
         const newCashflowRow = document.createElement("tr");
+        newCashflowRow.classList.add("new-tr");
         // CREATE AND ADD DATE CELL TO ROW
         const dateCell = document.createElement("td");
         dateCell.textContent = dateMoneyPair.date;
