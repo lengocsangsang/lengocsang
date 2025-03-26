@@ -69,34 +69,6 @@ function clearCashflowTable() {
     });
 }
 
-export default function investmentFunction() {
-  document.addEventListener("DOMContentLoaded", function () {
-    const cashflowTableBody = document.querySelector(".table-cashflow tbody");
-    if (!(localStorage.getItem("cashflow") === null)) {
-      const cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
-      for (const dateMoneyPair of cashflowArray) {
-        // CREATE NEW ROW
-        const newCashflowRow = document.createElement("tr");
-        newCashflowRow.classList.add("new-tr");
-        // CREATE AND ADD DATE CELL TO ROW
-        const dateCell = document.createElement("td");
-        dateCell.textContent = dateMoneyPair.date;
-        newCashflowRow.appendChild(dateCell);
-        // CREATE AND ADD money CELL TO ROW
-        const moneyCell = document.createElement("td");
-        moneyCell.textContent = dateMoneyPair.money;
-        newCashflowRow.append(moneyCell);
-        // ADD newCashflowRow to cashflowTableBody
-        cashflowTableBody.appendChild(newCashflowRow);
-      }
-    }
-  });
-  getCashflowInfo();
-  clearCashflowTable();
-}
-
-// // ### **Code JavaScript:**
-// // ```javascript
 function computeIRR(
   cashFlows,
   guess = 0.1,
@@ -126,6 +98,79 @@ function computeIRR(
   return null; // Không hội tụ
 }
 
+function triggerMWRRcalculation() {
+  const amountFromLocalStorage =
+    JSON.parse(localStorage.getItem("cashflow")) || [];
+  const cashFlows = amountFromLocalStorage.map((each) => each.money);
+  document.querySelector(".mwrr").addEventListener("click", () => {
+    const mwrr = computeIRR(cashFlows);
+
+    if (mwrr !== null && mwrr !== undefined) {
+      const calculateedResultName = document.createElement("p");
+      calculateedResultName.classList.add("box-calculate-result-name");
+      calculateedResultName.textContent = "MWRR";
+      const calculateedResultNumber = document.createElement("p");
+      calculateedResultNumber.classList.add("box-calculate-result-number");
+      calculateedResultNumber.textContent = `${mwrr.toFixed(2)}%`;
+      document
+        .querySelector(".box-calculate-render")
+        .appendChild(calculateedResultName);
+      document
+        .querySelector(".box-calculate-render")
+        .appendChild(calculateedResultNumber);
+    }
+  });
+}
+
+function clearCalculateResult() {
+  if (document.querySelectorAll(".box-calculate-render p")) {
+    document
+      .querySelector(".box-calculate-clear-button")
+      .addEventListener("click", () => {
+        document
+          .querySelectorAll(".box-calculate-render p")
+          .forEach((p) => p.remove());
+      });
+  }
+  document
+    .querySelector(".table-cashflow-remove-button")
+    .addEventListener("click", () => {
+      localStorage.removeItem("cashflow");
+      document.querySelectorAll("tr.new-tr").forEach((tr) => tr.remove());
+    });
+}
+
+export default function investmentFunction() {
+  document.addEventListener("DOMContentLoaded", function () {
+    const cashflowTableBody = document.querySelector(".table-cashflow tbody");
+    if (!(localStorage.getItem("cashflow") === null)) {
+      const cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
+      for (const dateMoneyPair of cashflowArray) {
+        // CREATE NEW ROW
+        const newCashflowRow = document.createElement("tr");
+        newCashflowRow.classList.add("new-tr");
+        // CREATE AND ADD DATE CELL TO ROW
+        const dateCell = document.createElement("td");
+        dateCell.textContent = dateMoneyPair.date;
+        newCashflowRow.appendChild(dateCell);
+        // CREATE AND ADD money CELL TO ROW
+        const moneyCell = document.createElement("td");
+        moneyCell.textContent = dateMoneyPair.money;
+        newCashflowRow.append(moneyCell);
+        // ADD newCashflowRow to cashflowTableBody
+        cashflowTableBody.appendChild(newCashflowRow);
+      }
+    }
+  });
+  getCashflowInfo();
+  clearCashflowTable();
+  triggerMWRRcalculation();
+  clearCalculateResult();
+}
+
+// // ### **Code JavaScript:**
+// // ```javascript
+
 // const a = JSON.parse(localStorage.getItem("cashflow")).map(
 //   (each) => each.money
 // );
@@ -134,17 +179,6 @@ function computeIRR(
 // returns null, and calling .map() on null will throw an error.
 
 // Danh sách dòng tiền (âm: đầu tư, dương: thu về)
-const amountFromLocalStorage =
-  JSON.parse(localStorage.getItem("cashflow")) || [];
-const cashFlows = amountFromLocalStorage.map((each) => each.money);
-
-// Tính IRR
-const mwrr = computeIRR(cashFlows);
-
-if (mwrr !== null && mwrr !== undefined)
-  console.log(
-    `Tỷ suất lợi nhuận theo trọng số dòng tiền (MWRR): ${mwrr.toFixed(2)}%`
-  );
 
 //   function computeIRR(cashFlows, dates, guess = 0.1, maxIterations = 100, precision = 1e-6) {
 //     if (cashFlows.length !== dates.length) {

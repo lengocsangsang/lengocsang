@@ -141,33 +141,59 @@
     </div>
     <div class="investment-general-container">
       <div class="investment-left-container">
-        <h1 class="investment-left-container-tools">Tools</h1>
         <ul>
-          <li class="investment-tools-mwrr">MWRR calculation</li>
+          <li class="investment-tools-mwrr"></li>
         </ul>
       </div>
       <div class="investment-center-container">
-        <form action="">
-          <label for="">Input cashflow</label>
-          <input class="input-date" type="date" />
-          <input class="input-money" type="number" />
-          <button class="button-add" type="button">add</button>
-        </form>
-        <div class="cashflow-render">
-          <h3 class="">Cashflow history</h3>
-          <table class="table-cashflow">
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Rows will be added dynamically -->
-            </tbody>
-          </table>
+        <div class="box-cashflow">
+          <form action="">
+            <label class="box-cashflow-title" for="">Input cashflow</label>
+            <input class="input-date" type="date" />
+            <input class="input-money" type="number" />
+            <button class="button-add" type="button">add</button>
+          </form>
+          <div class="cashflow-render">
+            <h3 class="cashflow-history-title">Cashflow history</h3>
+            <table class="table-cashflow">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Rows will be added dynamically -->
+              </tbody>
+            </table>
+          </div>
+          <button class="table-cashflow-remove-button">Clear history</button>
         </div>
-        <button class="table-cashflow-remove-button">Clear history</button>
+        <div class="box-calculate">
+          <div class="box-calculate-title">Calculate</div>
+          <div class="box-calculate-buttons">
+            <button class="box-calculate-button roi">#ROI</button>
+            <button class="box-calculate-button irr">#IRR</button>
+            <button class="box-calculate-button mwrr">#MWRR</button>
+            <button class="box-calculate-button beta">#Beta</button>
+            <button class="box-calculate-button npv">#NPV</button>
+            <button class="box-calculate-button twrr">#TWRR</button>
+          </div>
+          <div class="box-calculate-render"></div>
+          <button class="box-calculate-clear-button">Clear</button>
+        </div>
+        <div class="box-explanation">
+          <div class="box-explanation-title">Explanation</div>
+          <div class="box-calculate-buttons">
+            <button class="box-calculate-button roi">#ROI</button>
+            <button class="box-calculate-button irr">#IRR</button>
+            <button class="box-calculate-button mwrr">#MWRR</button>
+            <button class="box-calculate-button beta">#Beta</button>
+            <button class="box-calculate-button npv">#NPV</button>
+            <button class="box-calculate-button twrr">#TWRR</button>
+          </div>
+          <div class="box-explanation-render"></div>
+        </div>
       </div>
       <div class="investment-right-container"></div>
       <button class="back-to-homepage">Back</button>

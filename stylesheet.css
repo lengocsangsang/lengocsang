@@ -231,7 +231,7 @@ h6 {
 
 .clearTaskBtn:hover {
   color: #f8f9fa;
-  background-color: #212529;
+  background-color: #c92a2a;
   transform: scale(1.1);
 }
 
@@ -321,20 +321,39 @@ h6 {
 }
 
 .investment-left-container {
-  background-color: white;
+  background-color: #f5f5f5;
 }
 /* INVESTMENT */
 .investment-center-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #f4f4f4; /* Light gray background */
-  border: 2px solid #ccc; /* Subtle border around the container */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Add spacing inside the container */
-  max-width: 100%; /* Restrict the width of the container */
-  margin: 30px auto; /* Center the container on the page */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  /* border: 2px solid #ccc; Subtle border around the container */
+  width: 100%; /* Restrict the width of the container */
+  /* padding-left: 20px; */
 }
 
-.investment-center-container h3 {
+.box-cashflow {
+  background-color: #f4f4f4;
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Add spacing inside the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  border: 2px solid #ccc;
+
+  width: 80%;
+  height: 85vh;
+
+  position: relative;
+
+  margin: 35px auto;
+}
+
+.box-cashflow-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cashflow-history-title {
   color: #333; /* Darker text color */
   text-align: center; /* Center the heading */
   font-size: 1.5em; /* Slightly larger font size */
@@ -355,9 +374,13 @@ h6 {
   font-size: 1em; /* Adjust font size */
 }
 
+.input-date {
+  font-size: 1.3em !important; /* Forces the font size */
+  appearance: none; /* Removes browser default styling */
+}
 .button-add {
   padding: 10px;
-  background-color: #007bff; /* Blue button background */
+  background-color: #adb5bd; /* Blue button background */
   color: #fff; /* White text color */
   border: none;
   border-radius: 4px;
@@ -367,7 +390,7 @@ h6 {
 }
 
 .button-add:hover {
-  background-color: #0056b3; /* Darker blue when hovered */
+  background-color: #212529; /* Darker blue when hovered */
 }
 
 .cashflow-render {
@@ -393,13 +416,13 @@ h6 {
 
 .table-cashflow-remove-button {
   position: absolute;
-  bottom: 40px;
-  left: 50%;
+  bottom: 2%;
+  left: 63%;
   /* position: absolute; */
 
   margin-top: 20px; /* Add spacing above the clear button */
   padding: 10px;
-  background-color: #dc3545; /* Red button background */
+  background-color: #adb5bd; /* Red button background */
   color: #fff; /* White text color */
   border: none;
   border-radius: 4px;
@@ -409,7 +432,7 @@ h6 {
 }
 
 .table-cashflow-remove-button:hover {
-  background-color: #a71d2a; /* Darker red when hovered */
+  background-color: #c92a2a; /* Darker red when hovered */
 }
 
 /* Target the scrollbar */
@@ -439,9 +462,113 @@ h6 {
   overflow: auto;
 }
 
-.investment-right-container {
-  background-color: white;
+/* BOX-IRR */
+.box-calculate {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 85vh;
+  margin: 35px auto;
+  border: solid 2px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  border: 2px solid #ccc;
+
+  position: relative;
 }
+
+.box-calculate-title {
+  margin: 20px auto;
+  color: #333; /* Darker text color */
+  text-align: center; /* Center the heading */
+  font-size: 1em; /* Slightly larger font size */
+}
+
+.box-calculate-buttons {
+  text-align: center;
+}
+
+.box-calculate-button {
+  color: #212529;
+  background-color: #f1f3f5;
+  padding: 10px; /* Add spacing inside inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1em; /* Adjust font size */
+}
+
+.box-calculate-button:hover {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.box-calculate-render {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-calculate-result-name {
+  font-size: 2em;
+  font-weight: 700;
+  /* color: #087f5b; */
+}
+
+.box-calculate-result-number {
+  font-size: 4em;
+  font-weight: 700;
+  color: #087f5b;
+}
+
+.box-calculate-clear-button {
+  position: absolute;
+  bottom: 2%;
+  left: 78%;
+
+  margin-top: 20px; /* Add spacing above the clear button */
+  padding: 10px;
+  background-color: #adb5bd; /* Red button background */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease; /* Add hover effect */
+}
+
+.box-calculate-clear-button:hover {
+  background-color: #c92a2a; /* Darker red when hovered */
+}
+
+.investment-right-container {
+  background-color: #f5f5f5;
+}
+
+.box-explanation {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 85vh;
+  margin: 35px auto;
+  border: solid 2px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  border: 2px solid #ccc;
+}
+
+.box-explanation-title {
+  margin: 20px auto;
+  color: #333; /* Darker text color */
+  text-align: center; /* Center the heading */
+  font-size: 1em; /* Slightly larger font size */
+}
+
 /* PROFESSIONAL SECTION */
 .professional-general-container {
   width: 100%;
@@ -480,8 +607,8 @@ h6 {
   z-index: 1000;
 
   position: absolute;
-  bottom: 4vh;
-  right: 12vw;
+  bottom: 3vh;
+  right: 11vw;
 }
 
 .back-to-homepage:hover {
