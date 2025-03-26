@@ -361,7 +361,7 @@ h6 {
   color: #333; /* Darker text color */
   text-align: center; /* Center the heading */
   font-size: 1.5em; /* Slightly larger font size */
-  margin-bottom: 20px; /* Add spacing below the heading */
+  margin-top: 15px; /* Add spacing below the heading */
 }
 
 .investment-center-container form {
@@ -395,10 +395,6 @@ h6 {
 
 .button-add:hover {
   background-color: #212529; /* Darker blue when hovered */
-}
-
-.cashflow-render {
-  margin-top: 30px; /* Add spacing above cashflow section */
 }
 
 .table-cashflow {
@@ -439,6 +435,12 @@ h6 {
   background-color: #c92a2a; /* Darker red when hovered */
 }
 
+.cashflow-render {
+  margin-top: 15px; /* Add spacing above cashflow section */
+  max-height: 250px;
+  overflow: auto;
+}
+
 /* Target the scrollbar */
 .cashflow-render::-webkit-scrollbar {
   width: 6px; /* Set the scrollbar width */
@@ -460,10 +462,6 @@ h6 {
 /* Add hover effect to the scrollbar thumb */
 .cashflow-render::-webkit-scrollbar-thumb:hover {
   background: #555; /* Slightly darker gray when hovered */
-}
-.cashflow-render {
-  max-height: 350px;
-  overflow: auto;
 }
 
 /* BOX-IRR */
