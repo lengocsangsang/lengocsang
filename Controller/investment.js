@@ -1,9 +1,6 @@
-const cashflowTableBody = document.querySelector(".table-cashflow tbody");
-
 function getCashflowInfo() {
-  let cashflowObject = {};
   let cashflowArray = [];
-
+  const cashflowTableBody = document.querySelector(".table-cashflow tbody");
   document.querySelector(".button-add").addEventListener("click", function (e) {
     e.preventDefault();
     // CASE 1: LOCAL STORAGE === null
@@ -13,14 +10,14 @@ function getCashflowInfo() {
       const cashflowMoney = document.querySelector(".input-money").value;
       if (cashflowDate && cashflowMoney) {
         // 1. CREATE OBJECT OF cashflowObject;
-        cashflowObject.date = cashflowDate;
-        cashflowObject.money = cashflowMoney;
+        const cashflowObject = { date: cashflowDate, money: cashflowMoney };
         // 2. ADD cashflowObject to cashflowArray
         cashflowArray.push(cashflowObject);
         // 3. save cashflowArray to localstorage as "cashflow"
         localStorage.setItem("cashflow", JSON.stringify(cashflowArray));
         // CREATE NEW ROW
         const newCashflowRow = document.createElement("tr");
+        newCashflowRow.classList.add("new-tr");
         // CREATE AND ADD DATE CELL TO ROW
         const dateCell = document.createElement("td");
         dateCell.textContent = cashflowDate;
@@ -32,15 +29,14 @@ function getCashflowInfo() {
         // ADD newCashflowRow to cashflowTableBody
         cashflowTableBody.appendChild(newCashflowRow);
       } else {
-        console.log("please input date and money");
+        alert("please input date and money");
       }
     } else {
       cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
       const cashflowDate = document.querySelector(".input-date").value;
       const cashflowMoney = document.querySelector(".input-money").value;
       if (cashflowDate && cashflowMoney) {
-        cashflowObject.date = cashflowDate;
-        cashflowObject.money = cashflowMoney;
+        const cashflowObject = { date: cashflowDate, money: cashflowMoney };
         cashflowArray.push(cashflowObject);
         localStorage.setItem("cashflow", JSON.stringify(cashflowArray));
         // CREATE NEW ROW
@@ -59,7 +55,6 @@ function getCashflowInfo() {
 
         // ADD newCashflowRow to cashflowTableBody
         cashflowTableBody.appendChild(newCashflowRow);
-        console.log(cashflowArray);
       }
     }
   });
@@ -70,13 +65,13 @@ function clearCashflowTable() {
     .querySelector(".table-cashflow-remove-button")
     .addEventListener("click", () => {
       localStorage.removeItem("cashflow");
+      document.querySelectorAll("tr.new-tr").forEach((tr) => tr.remove());
     });
-
-  document.querySelectorAll("tr.new-tr").forEach((tr) => tr.remove());
 }
 
 export default function investmentFunction() {
   document.addEventListener("DOMContentLoaded", function () {
+    const cashflowTableBody = document.querySelector(".table-cashflow tbody");
     if (!(localStorage.getItem("cashflow") === null)) {
       const cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
       for (const dateMoneyPair of cashflowArray) {
@@ -93,7 +88,6 @@ export default function investmentFunction() {
         newCashflowRow.append(moneyCell);
         // ADD newCashflowRow to cashflowTableBody
         cashflowTableBody.appendChild(newCashflowRow);
-        console.log(cashflowArray);
       }
     }
   });
@@ -101,62 +95,91 @@ export default function investmentFunction() {
   clearCashflowTable();
 }
 
-// ### **Code JavaScript:**
-// ```javascript
-// function computeIRR(cashFlows, guess = 0.1, maxIterations = 100, precision = 1e-6) {
+// // ### **Code JavaScript:**
+// // ```javascript
+function computeIRR(
+  cashFlows,
+  guess = 0.1,
+  maxIterations = 100,
+  precision = 1e-6
+) {
+  let rate = guess;
+  for (let i = 0; i < maxIterations; i++) {
+    let npv = 0;
+    let derivative = 0;
+
+    for (let t = 0; t < cashFlows.length; t++) {
+      npv += cashFlows[t] / Math.pow(1 + rate, t);
+      derivative += (-t * cashFlows[t]) / Math.pow(1 + rate, t + 1);
+    }
+
+    if (Math.abs(npv) < precision) {
+      return rate * 100; // Chuyển thành %
+    }
+
+    rate -= npv / derivative; // Newton-Raphson update
+
+    if (Math.abs(npv) < precision) {
+      return rate * 100;
+    }
+  }
+  return null; // Không hội tụ
+}
+
+// const a = JSON.parse(localStorage.getItem("cashflow")).map(
+//   (each) => each.money
+// );
+// may cause an error if localStorage.getItem("cashflow") is null
+// (meaning there is no saved data in localStorage). In that case, JSON.parse(null)
+// returns null, and calling .map() on null will throw an error.
+
+// Danh sách dòng tiền (âm: đầu tư, dương: thu về)
+const amountFromLocalStorage =
+  JSON.parse(localStorage.getItem("cashflow")) || [];
+const cashFlows = amountFromLocalStorage.map((each) => each.money);
+
+// Tính IRR
+const mwrr = computeIRR(cashFlows);
+
+if (mwrr !== null && mwrr !== undefined)
+  console.log(
+    `Tỷ suất lợi nhuận theo trọng số dòng tiền (MWRR): ${mwrr.toFixed(2)}%`
+  );
+
+//   function computeIRR(cashFlows, dates, guess = 0.1, maxIterations = 100, precision = 1e-6) {
+//     if (cashFlows.length !== dates.length) {
+//         console.error("Error: Cash flows and dates must have the same length.");
+//         return null;
+//     }
+
+//     // Convert dates to time differences (in years)
+//     const startDate = new Date(dates[0]);
+//     const timePeriods = dates.map(date => (new Date(date) - startDate) / (1000 * 60 * 60 * 24 * 365)); // Convert to years
+
 //     let rate = guess;
 
 //     for (let i = 0; i < maxIterations; i++) {
 //         let npv = 0;
 //         let derivative = 0;
 
-//         for (let t = 0; t < cashFlows.length; t++) {
-//             npv += cashFlows[t] / Math.pow(1 + rate, t);
-//             derivative += -t * cashFlows[t] / Math.pow(1 + rate, t + 1);
+//         for (let j = 0; j < cashFlows.length; j++) {
+//             const t = timePeriods[j];
+//             npv += cashFlows[j] / Math.pow(1 + rate, t);
+//             derivative += -t * cashFlows[j] / Math.pow(1 + rate, t + 1);
 //         }
 
 //         if (Math.abs(npv) < precision) {
-//             return rate * 100; // Chuyển thành %
+//             return rate * 100; // Convert to percentage
 //         }
 
-//         rate -= npv / derivative; // Newton-Raphson update
-
-//         if (Math.abs(npv) < precision) {
-//             return rate * 100;
-//         }
+//         rate -= npv / derivative;
 //     }
 
-//     return null; // Không hội tụ
+//     return null; // No solution found
 // }
 
-// // Danh sách dòng tiền (âm: đầu tư, dương: thu về)
+// // Example: Now dates are explicitly considered
 // const cashFlows = [-10000, -2000, 6000, -1000, 12000];
+// const dates = ["2023-01-01", "2023-06-01", "2024-01-01", "2024-06-01", "2025-01-01"];
 
-// // Tính IRR
-// const mwrr = computeIRR(cashFlows);
-
-// console.log(`Tỷ suất lợi nhuận theo trọng số dòng tiền (MWRR): ${mwrr.toFixed(2)}%`);
-// ```
-
-// ---
-
-// ### **Cách hoạt động:**
-// - **Phương pháp Newton-Raphson**: Lặp lại để tìm giá trị `r` sao cho NPV gần bằng 0.
-// - `cashFlows` chứa dòng tiền theo từng kỳ.
-// - `guess` là giá trị ban đầu (10%).
-// - `maxIterations` là số lần lặp tối đa (100 lần).
-// - `precision` là sai số chấp nhận được (`1e-6`).
-
-// ---
-
-// ### **Kết quả:**
-// Với dữ liệu mẫu:
-// ```js
-// const cashFlows = [-10000, -2000, 6000, -1000, 12000];
-// ```
-// **Kết quả in ra:**
-// ```
-// Tỷ suất lợi nhuận theo trọng số dòng tiền (MWRR): 11.73%
-// ```
-
-// Bạn có thể **copy & chạy** code này trong trình duyệt hoặc **Node.js**! 🚀
+// console.log(`MWRR: ${computeIRR(cashFlows, dates)?.toFixed(2)}%`);

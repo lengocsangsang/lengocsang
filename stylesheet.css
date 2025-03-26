@@ -392,6 +392,11 @@ h6 {
 }
 
 .table-cashflow-remove-button {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  /* position: absolute; */
+
   margin-top: 20px; /* Add spacing above the clear button */
   padding: 10px;
   background-color: #dc3545; /* Red button background */
