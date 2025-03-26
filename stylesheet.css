@@ -878,8 +878,8 @@ h6 {
     background-color: #f8f9fa;
     border: none;
     position: absolute;
-    top: 0;
-    right: 15%;
+    top: 20%;
+    right: 35%;
     display: block;
   }
 
@@ -964,8 +964,8 @@ h6 {
 
   .clearTaskBtn {
     position: absolute;
-    bottom: 22vh;
-    right: 26vw;
+    bottom: 20vh;
+    right: 30vw;
     /* width: 50px; */
     background-color: #dee2e6;
     color: #ebfbee;
