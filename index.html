@@ -149,21 +149,25 @@
       <div class="investment-center-container">
         <form action="">
           <label for="">Input cashflow</label>
-          <input type="date" />
-          <input type="number" />
-          <button>add</button>
+          <input class="input-date" type="date" />
+          <input class="input-money" type="number" />
+          <button class="button-add" type="button">add</button>
         </form>
         <div class="cashflow-render">
-          <h3 class="">Your cashflow:</h3>
-          <table>
-            <tr>
-              Date
-            </tr>
-            <tr>
-              Money
-            </tr>
+          <h3 class="">Cashflow history</h3>
+          <table class="table-cashflow">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows will be added dynamically -->
+            </tbody>
           </table>
         </div>
+        <button class="table-cashflow-remove-button">Clear table</button>
       </div>
       <div class="investment-right-container"></div>
       <button class="back-to-homepage">Back</button>

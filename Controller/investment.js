@@ -1,8 +1,147 @@
-// Dưới đây là đoạn code **JavaScript** để tính **tỷ suất lợi nhuận theo trọng số dòng tiền (MWRR)** bằng phương pháp **IRR (Internal Rate of Return)**.
+const cashflowTableBody = document.querySelector(".table-cashflow tbody");
 
-// Code này sử dụng phương pháp lặp **Newton-Raphson** để tìm nghiệm của phương trình IRR.
+function getCashflowInfo() {
+  let cashflowObject = {};
+  let cashflowArray = [];
 
-// ---
+  document.querySelector(".button-add").addEventListener("click", function (e) {
+    e.preventDefault();
+    // CASE 1: LOCAL STORAGE === null
+    if (localStorage.getItem("cashflow") === null) {
+      // 0. GET VALUE FOR cashflowDate and cashflowMoney
+      const cashflowDate = document.querySelector(".input-date").value;
+      const cashflowMoney = document.querySelector(".input-money").value;
+      if (cashflowDate && cashflowMoney) {
+        // 1. CREATE OBJECT OF cashflowObject;
+        cashflowObject.date = cashflowDate;
+        cashflowObject.money = cashflowMoney;
+        // 2. ADD cashflowObject to cashflowArray
+        cashflowArray.push(cashflowObject);
+        // 3. save cashflowArray to localstorage as "cashflow"
+        localStorage.setItem("cashflow", JSON.stringify(cashflowArray));
+      } else {
+        console.log("please input date and money");
+      }
+      // CREATE NEW ROW
+      const newCashflowRow = document.createElement("tr");
+
+      // CREATE AND ADD DATE CELL TO ROW
+      const dateCell = document.createElement("td");
+      dateCell.textContent = cashflowDate;
+      newCashflowRow.appendChild(dateCell);
+
+      // CREATE AND ADD money CELL TO ROW
+      const moneyCell = document.createElement("td");
+      moneyCell.textContent = cashflowMoney;
+      newCashflowRow.append(moneyCell);
+
+      // ADD newCashflowRow to cashflowTableBody
+      cashflowTableBody.appendChild(newCashflowRow);
+    } else {
+      cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
+      const cashflowDate = document.querySelector(".input-date").value;
+      const cashflowMoney = document.querySelector(".input-money").value;
+      if (cashflowDate && cashflowMoney) {
+        cashflowObject.date = cashflowDate;
+        cashflowObject.money = cashflowMoney;
+        cashflowArray.push(cashflowObject);
+        localStorage.setItem("cashflow", JSON.stringify(cashflowArray));
+      }
+      // CREATE NEW ROW
+      const newCashflowRow = document.createElement("tr");
+
+      // CREATE AND ADD DATE CELL TO ROW
+      const dateCell = document.createElement("td");
+      dateCell.textContent = cashflowDate;
+      newCashflowRow.appendChild(dateCell);
+
+      // CREATE AND ADD money CELL TO ROW
+      const moneyCell = document.createElement("td");
+      moneyCell.textContent = cashflowMoney;
+      newCashflowRow.append(moneyCell);
+
+      // ADD newCashflowRow to cashflowTableBody
+      cashflowTableBody.appendChild(newCashflowRow);
+    }
+  });
+}
+
+function clearCashflowTable() {
+  document
+    .querySelector(".table-cashflow-remove-button")
+    .addEventListener("click", localStorage.clear());
+}
+
+export default function investmentFunction() {
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!(localStorage.getItem("cashflow") === null)) {
+      console.log("TABLEEEEEEE");
+      const cashflowArray = JSON.parse(localStorage.getItem("cashflow"));
+      for (const dateMoneyPair of cashflowArray) {
+        // CREATE NEW ROW
+        const newCashflowRow = document.createElement("tr");
+
+        // CREATE AND ADD DATE CELL TO ROW
+        const dateCell = document.createElement("td");
+        dateCell.textContent = dateMoneyPair.date;
+        newCashflowRow.appendChild(dateCell);
+
+        // CREATE AND ADD money CELL TO ROW
+        const moneyCell = document.createElement("td");
+        moneyCell.textContent = dateMoneyPair.money;
+        newCashflowRow.append(moneyCell);
+
+        // ADD newCashflowRow to cashflowTableBody
+        cashflowTableBody.appendChild(newCashflowRow);
+      }
+    }
+  });
+  getCashflowInfo();
+  clearCashflowTable();
+}
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const tableBody = document.querySelector("#infoTable tbody");
+//   const nameInput = document.getElementById("nameInput");
+//   const ageInput = document.getElementById("ageInput");
+//   const cityInput = document.getElementById("cityInput");
+//   const addRowButton = document.getElementById("addRowButton");
+
+//   addRowButton.addEventListener("click", function () {
+//     const name = nameInput.value.trim();
+//     const age = ageInput.value.trim();
+//     const city = cityInput.value.trim();
+
+//     if (name === "" || age === "" || city === "") {
+//       alert("Please fill out all fields.");
+//       return;
+//     }
+
+//     // Create a new row
+//     const newRow = document.createElement("tr");
+
+//     // Add cells to the row
+//     const nameCell = document.createElement("td");
+//     nameCell.textContent = name;
+//     newRow.appendChild(nameCell);
+
+//     const ageCell = document.createElement("td");
+//     ageCell.textContent = age;
+//     newRow.appendChild(ageCell);
+
+//     const cityCell = document.createElement("td");
+//     cityCell.textContent = city;
+//     newRow.appendChild(cityCell);
+
+//     // Append the new row to the table body
+//     tableBody.appendChild(newRow);
+
+//     // Clear input fields
+//     nameInput.value = "";
+//     ageInput.value = "";
+//     cityInput.value = "";
+//   });
+// });
 
 // ### **Code JavaScript:**
 // ```javascript
