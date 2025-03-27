@@ -13,7 +13,7 @@
 64E:\mypage\node_modules\svgo\plugins\addAttributesToSVGElement.js133855864661604539 0
 14E:\mypage\html133855861826538300 1
 13E:\mypage\css133855861826311205 1
-18E:\mypage\index.js133875693717808857 0
+18E:\mypage\index.js133875751205318362 0
 73E:\mypage\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Nth.cjs133855864670175584 0
 33E:\mypage\dist\index.ee8bdd7e.css133871439645719033 0
 51E:\mypage\node_modules\nth-check\lib\esm\parse.d.ts133855864654740865 0
@@ -1372,7 +1372,7 @@
 33E:\mypage\dist\index.9934edec.css133861954241948349 0
 33E:\mypage\dist\index.a3fec961.css133874573392115069 0
 37E:\mypage\dist\index.a3fec961.css.map133874573394135653 0
-34E:\mypage\Controller\investment.js133874837457726286 0
+34E:\mypage\Controller\investment.js133875752119916555 0
 37E:\mypage\dist\index.a9988c76.css.map133861937176064190 0
 32E:\mypage\dist\index.aa076248.js133874219205277290 0
 37E:\mypage\dist\index.aae0bea1.css.map133874859597873698 0
