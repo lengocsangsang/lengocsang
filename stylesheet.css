@@ -988,6 +988,27 @@ h6 {
     background-color: #c92a2a;
   }
 
+  .task-delete-button {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(231, 76, 60);
+    border: 1px solid rgb(192, 57, 43);
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    transition: background-color 0.2s, transform 0.1s;
+    display: inline-block;
+  }
+
+  .task-delete-button:hover {
+    background-color: rgb(192, 57, 43);
+    transform: scale(1.1);
+  }
+
   /* HOMEPAGE-RIGHT-CONTAINER */
   .homepage-right-container {
     background-color: #f8f9fa;

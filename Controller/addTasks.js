@@ -24,8 +24,12 @@ export default function addTaskToMainSection() {
 
     function addTaskToDom(taskContent) {
       const taskItem = document.createElement("li");
+      const deleteBtn = document.createElement("span");
       taskItem.classList.add("task-item");
       taskItem.textContent = taskContent;
+      deleteBtn.textContent = "-";
+      deleteBtn.classList.add("task-delete-button");
+      taskItem.appendChild(deleteBtn);
       taskList.appendChild(taskItem);
     }
 
