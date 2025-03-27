@@ -212,6 +212,34 @@ h6 {
   overflow: visible;
 }
 
+.task-delete-button {
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  vertical-align: middle;
+
+  margin-left: 10px;
+
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(231, 76, 60);
+  border: 1px solid rgb(192, 57, 43);
+  border-radius: 1px;
+  width: 16px;
+  height: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 10px;
+  transition: background-color 0.2s, transform 0.1s;
+  display: inline-block;
+}
+
+.task-delete-button:hover {
+  background-color: rgb(192, 57, 43);
+  transform: scale(1.1);
+}
+
 .clearTaskBtn {
   position: absolute;
   bottom: 4vh;
