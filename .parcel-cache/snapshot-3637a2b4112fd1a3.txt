@@ -1,5 +1,5 @@
-1411
-14E:\mypage\dist133875734762256925 1
+1413
+14E:\mypage\dist133875766901997142 1
 60E:\mypage\node_modules\csso\node_modules\css-tree\lib\parser133855864682713640 1
 33E:\mypage\dist\index.44b7042d.css133873816196959805 0
 57E:\mypage\node_modules\svgo\plugins\convertShapeToPath.js133855864665640664 0
@@ -1363,6 +1363,8 @@
 36E:\mypage\dist\index.6216c918.js.map133867142797635323 0
 37E:\mypage\dist\index.6e151f44.css.map133871850375293433 0
 36E:\mypage\dist\index.70c9891a.js.map133871446129932758 0
+32E:\mypage\dist\index.86183ec0.js133875766901423812 0
+36E:\mypage\dist\index.86183ec0.js.map133875766901975543 0
 33E:\mypage\dist\index.86a49b6e.css133874201829431207 0
 36E:\mypage\dist\index.8860274c.js.map133874573394140975 0
 33E:\mypage\dist\index.8daf0c2c.css133874726457933992 0
@@ -1372,7 +1374,7 @@
 33E:\mypage\dist\index.9934edec.css133861954241948349 0
 33E:\mypage\dist\index.a3fec961.css133874573392115069 0
 37E:\mypage\dist\index.a3fec961.css.map133874573394135653 0
-34E:\mypage\Controller\investment.js133875752119916555 0
+34E:\mypage\Controller\investment.js133875766442499139 0
 37E:\mypage\dist\index.a9988c76.css.map133861937176064190 0
 32E:\mypage\dist\index.aa076248.js133874219205277290 0
 37E:\mypage\dist\index.aae0bea1.css.map133874859597873698 0
@@ -1404,7 +1406,7 @@
 32E:\mypage\dist\index.f5783793.js133874505050625725 0
 33E:\mypage\dist\index.fe3b4704.css133861890535084041 0
 37E:\mypage\dist\index.fe3b4704.css.map133861890535476655 0
-25E:\mypage\dist\index.html133875734759579184 0
+25E:\mypage\dist\index.html133875766900830080 0
 32E:\mypage\Controller\addTasks.js133875725602439237 0
 30E:\mypage\Controller\config.js133874206427561173 0
 35E:\mypage\Controller\getCoinList.js133853897101492278 0

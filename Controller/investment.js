@@ -75,12 +75,14 @@ function computeIRR(
   maxIterations = 100,
   precision = 1e-6
 ) {
+  console.log(cashFlows);
   let rate = guess;
   for (let i = 0; i < maxIterations; i++) {
     let npv = 0;
     let derivative = 0;
 
     for (let t = 0; t < cashFlows.length; t++) {
+      console.log(cashFlows[t]);
       npv += cashFlows[t] / Math.pow(1 + rate, t);
       derivative += (-t * cashFlows[t]) / Math.pow(1 + rate, t + 1);
     }
@@ -100,6 +102,7 @@ function computeIRR(
 
 function triggerMWRRcalculation() {
   // RETRIEVE DATA FROM LOCALSTORAGE
+
   const amountFromLocalStorage =
     JSON.parse(localStorage.getItem("cashflow")) || [];
   const cashFlows = amountFromLocalStorage.map((each) => each.money);
