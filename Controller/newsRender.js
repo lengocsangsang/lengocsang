@@ -16,11 +16,15 @@ export default async function newsRender() {
   // Add the click event listener only once
   language.addEventListener("click", function () {
     if (language.dataset.lang === "ja") {
+      console.log(language.dataset.lang);
       language.dataset.lang = "en";
       language.textContent = "EN"; // Update to indicate switching to English
+      console.log(language.dataset.lang);
     } else if (language.dataset.lang === "en") {
+      console.log(language.dataset.lang);
       language.dataset.lang = "ja";
       language.textContent = "JA"; // Update to indicate switching to Japanese
+      console.log(language.dataset.lang);
     }
   });
 
