@@ -131,6 +131,7 @@ export const fireworkColors = [
   },
 ];
 
+export const language = document.querySelector(".news-button-language");
 export const general = document.querySelector(".news-button-general");
 export const business = document.querySelector(".news-button-business");
 export const technology = document.querySelector(".news-button-technology");

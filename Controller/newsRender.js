@@ -1,6 +1,7 @@
 import newsFunction from "./newsFunction.js";
 
 import {
+  language,
   general, //GUARD
   business,
   technology, //GUARD
@@ -11,39 +12,71 @@ import {
 } from "./config.js";
 
 export default async function newsRender() {
-  // AI BUTTON CLICK
+  language.dataset.lang = "ja";
+  // Add the click event listener only once
+  language.addEventListener("click", function () {
+    if (language.dataset.lang === "ja") {
+      language.dataset.lang = "en";
+      language.textContent = "EN"; // Update to indicate switching to English
+    } else if (language.dataset.lang === "en") {
+      language.dataset.lang = "ja";
+      language.textContent = "JA"; // Update to indicate switching to Japanese
+    }
+  });
+
   general.addEventListener("click", async function () {
-    newsFunction("general");
+    if (language.dataset.lang === "ja") {
+      newsFunction("general", "ja", "jp");
+    } else {
+      newsFunction("general", "en", "us");
+    }
   });
 
   // CRYPTO BUTTON CLICK
   business.addEventListener("click", async function () {
-    newsFunction("business");
+    if (language.dataset.lang === "ja") {
+      newsFunction("business", "ja", "jp");
+    } else {
+      newsFunction("business", "en", "us");
+    }
   });
+  // CRYPTO BUTTON CLICK
 
-  // BUSINESS BUTTON CLICK
   technology.addEventListener("click", async function () {
-    newsFunction("technology");
+    if (language.dataset.lang === "ja") {
+      newsFunction("technology", "ja", "jp");
+    } else {
+      newsFunction("technology", "en", "us");
+    }
   });
 
-  // SPORTS BUTTON CLICK
   entertainment.addEventListener("click", async function () {
-    newsFunction("entertainment");
+    if (language.dataset.lang === "ja") {
+      newsFunction("entertainment", "ja", "jp");
+    } else {
+      newsFunction("entertainment", "en", "us");
+    }
   });
-
-  // TRAVEL BUTTON CLICK
   sports.addEventListener("click", async function () {
-    newsFunction("sports");
+    if (language.dataset.lang === "ja") {
+      newsFunction("sports", "ja", "jp");
+    } else {
+      newsFunction("sports", "en", "us");
+    }
   });
-
-  // FINANCE BUTTON CLICK
   science.addEventListener("click", async function () {
-    newsFunction("science");
+    if (language.dataset.lang === "ja") {
+      newsFunction("science", "ja", "jp");
+    } else {
+      newsFunction("science", "en", "us");
+    }
   });
-
-  // HEALTH BUTTON CLICK
   health.addEventListener("click", async function () {
-    newsFunction("health");
+    if (language.dataset.lang === "ja") {
+      newsFunction("health", "ja", "jp");
+    } else {
+      newsFunction("health", "en", "us");
+    }
   });
 }
 

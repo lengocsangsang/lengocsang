@@ -57,7 +57,7 @@ function renderFunction(resultForNews) {
   }
 }
 
-export default async function newsFunction(query) {
+export default async function newsFunction(query, lan, nation) {
   try {
     // 0. DELETE ALL CONTENT INSIDE newsRenderEl
     newsRenderEl.innerHTML = "";
@@ -76,8 +76,10 @@ export default async function newsFunction(query) {
 
     // 6. FETCH FOR NEWS
     const resForNews = await fetch(
-      `https://gnews.io/api/v4/top-headlines?category=${query}&lang=ja&country=jp&apikey=${apiKeyForNews}`
+      `https://gnews.io/api/v4/top-headlines?category=${query}&lang=${lan}&country=${nation}&apikey=${apiKeyForNews}`
     );
+
+    // https://gnews.io/api/v4/top-headlines?category=${query}&lang=lan&country=nation&apikey=${apiKeyForNews}
     const resultForNews = await resForNews.json();
     // 7. REMOVE LOADING...FROM newsRenderEl
     newsRenderEl.textContent = "";

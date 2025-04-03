@@ -68,36 +68,48 @@ function clearCashflowTable() {
       document.querySelectorAll("tr.new-tr").forEach((tr) => tr.remove());
     });
 }
-
 function computeIRR(
   cashFlows,
   guess = 0.1,
   maxIterations = 100,
   precision = 1e-6
 ) {
-  console.log(cashFlows);
-  let rate = guess;
+  let rate = guess; // Initial guess for IRR
+
+  // Convert dates to time differences in years
+  const startDate = new Date(cashFlows[0].date);
+  let times = cashFlows.map((entry) => {
+    let timeDiff =
+      (new Date(entry.date) - startDate) / (1000 * 60 * 60 * 24 * 365); // Convert ms → years
+    return timeDiff;
+  });
+
   for (let i = 0; i < maxIterations; i++) {
     let npv = 0;
     let derivative = 0;
 
     for (let t = 0; t < cashFlows.length; t++) {
-      console.log(cashFlows[t]);
-      npv += cashFlows[t] / Math.pow(1 + rate, t);
-      derivative += (-t * cashFlows[t]) / Math.pow(1 + rate, t + 1);
+      let money = parseFloat(cashFlows[t].money); // Extract money correctly
+      let time = times[t]; // Use actual time difference
+      npv += money / Math.pow(1 + rate, time);
+      derivative += (-time * money) / Math.pow(1 + rate, time + 1);
     }
 
     if (Math.abs(npv) < precision) {
-      return rate * 100; // Chuyển thành %
+      return rate * 100; // Convert to percentage
     }
 
-    rate -= npv / derivative; // Newton-Raphson update
+    let newRate = rate - npv / derivative;
 
-    if (Math.abs(npv) < precision) {
-      return rate * 100;
+    // Check if the new rate is a valid number
+    if (isNaN(newRate) || !isFinite(newRate)) {
+      return null; // No convergence
     }
+
+    rate = newRate;
   }
-  return null; // Không hội tụ
+
+  return null; // No solution found within maxIterations
 }
 
 function triggerMWRRcalculation() {

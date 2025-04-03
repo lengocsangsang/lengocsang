@@ -660,6 +660,11 @@ h6 {
   font-size: 48px;
 }
 
+.news-button-language {
+  background-color: #ff922b;
+  border-radius: 10%;
+}
+
 /* topics for news */
 #news-button {
   margin: 2px;
