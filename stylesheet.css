@@ -663,6 +663,8 @@ h6 {
 .news-button-language {
   background-color: #ff922b;
   border-radius: 10%;
+  width: 2.8em;
+  height: 1.8em;
 }
 
 /* topics for news */
