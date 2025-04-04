@@ -28,9 +28,9 @@ export default function manipulateSidePanel() {
     });
 
   document
-    .getElementById("panel-item-professional")
+    .getElementById("panel-item-japanese")
     .addEventListener("click", function () {
-      const element = document.querySelector(".professional-general-container");
+      const element = document.querySelector(".japanese-general-container");
       element.scrollIntoView();
     });
 }

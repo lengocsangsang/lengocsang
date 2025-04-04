@@ -21,6 +21,35 @@ h6 {
   font-weight: 700; /* Make headings bold */
 }
 
+.back-to-homepage {
+  background-color: #dee2e6;
+  color: #ebfbee;
+
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 12px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  z-index: 1000;
+
+  position: absolute;
+  bottom: 3vh;
+  right: 11vw;
+
+  transition: all 0.4s ease;
+}
+
+.back-to-homepage:hover {
+  box-shadow: 0 0 5px #495057;
+  cursor: pointer;
+  background-color: #212529;
+}
+
 /* HOMEPAGE */
 .homepage-general-container {
   background-color: #f8f9fa;
@@ -603,11 +632,94 @@ h6 {
 }
 
 /* PROFESSIONAL SECTION */
-.professional-general-container {
+.japanese-general-container {
   width: 100%;
   height: 100vh;
   background-color: #f5f5f5;
   position: relative;
+
+  display: flex;
+  flex-direction: row;
+}
+.japanese-left-container {
+  height: 100vh;
+  width: 20vw;
+}
+
+.japanese-right-container {
+  height: 100vh;
+  width: 80vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.japanese-word-meaning-render-area {
+  width: 70vw;
+  height: 60%;
+}
+
+.word-display-area {
+  width: 70vw;
+  height: 80%;
+  margin: 2em auto;
+  background-color: #ced4da;
+  border-radius: 1em;
+}
+
+.japanese-word-input-box {
+  width: 80vw;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.word,
+.meaning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.word {
+  width: 50%;
+  height: 100%;
+}
+
+.meaning {
+  width: 50%;
+  height: 100%;
+}
+
+.japanese-word-input {
+  padding: 1em;
+  border-radius: 1em;
+  font-size: 1.5em;
+  width: 70%;
+}
+
+.japanese-meaning-input {
+  width: 80%;
+  height: 70%;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.japanese-word-meaning-render-area {
+  width: 80vw;
+  height: 70%;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.japanese-back-button {
+  position: absolute;
+  left: 1.5em;
+  max-width: 5em;
 }
 
 /* NEW SECTION */
@@ -621,35 +733,6 @@ h6 {
   text-align: center;
   padding-top: 24px;
   position: relative;
-}
-
-.back-to-homepage {
-  background-color: #dee2e6;
-  color: #ebfbee;
-
-  border-radius: 24px;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 10px 12px;
-  transition: all 0.3s ease;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  z-index: 1000;
-
-  position: absolute;
-  bottom: 3vh;
-  right: 11vw;
-
-  transition: all 0.4s ease;
-}
-
-.back-to-homepage:hover {
-  box-shadow: 0 0 5px #495057;
-  cursor: pointer;
-  background-color: #212529;
 }
 
 /* CSS FOR NEWS RENDER */
